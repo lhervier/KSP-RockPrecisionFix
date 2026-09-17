@@ -126,12 +126,45 @@ quads before the scatter destroys its holders; the visibility of a holder is swi
 
 ## Results
 
-Not measured yet.
+Measured with [Rock Precision Fix Diag](https://github.com/lhervier/KSP-RockPrecisionFixDiag), following
+[its protocol](https://github.com/lhervier/KSP-RockPrecisionFixDiag/blob/main/README.md#the-protocol), on
+[the save it keeps](https://github.com/lhervier/KSP-RockPrecisionFixDiag/blob/main/perfs/README.md#the-save):
+a Mk1 command pod landed on Kerbin, about 8 km north-west of the KSC, where the scatter is grass and
+trees. This mod was installed along with [Terrain Precision Fix](https://github.com/lhervier/KSP-TerrainPrecisionFix),
+the save loaded six times in a single session of KSP, and one record taken after each load. The install
+and the six records are under [perfs](perfs/README.md). The same save, recorded the same way on stock and
+with Terrain Precision Fix alone, is summed up on
+[the instrument's page](https://github.com/lhervier/KSP-RockPrecisionFixDiag/blob/main/README.md#what-the-readings-show),
+in a table whose first five rows are the rows below.
 
-To measure it: [Rock Precision Fix Diag](https://github.com/lhervier/KSP-RockPrecisionFixDiag), with
-this mod installed, the same save loaded several times, one reading recorded per load. Expected, from the
-code: every holder hanging under its own quad, and under each holder the height of its objects above the
-ground the same on every load, as steady as **Rocks − Matrix** was in stock.
+All six records hold the same 64 quads and 118 holders, all of them built, and name the same nearest
+quad, `Kerbin Zn3010000130`, with the same 218 objects: 200 `Grass00` and 18 `Tree00`. The *range* of a
+reading is its largest value minus its smallest over the six loads.
+
+| | with both fixes |
+|---|---|
+| centre of the nearest quad, range | 0.001 mm |
+| matrix of each quad against its centre | *up* and *across* 0.000 mm everywhere |
+| centre of each holder against its quad's | the same height, to the micrometre |
+| *up* of the holders' matrices | 0.000 mm everywhere, and *across* as well |
+| each object above the ground, range | 0.027 mm (median over the objects), 0.114 mm at most |
+
+**The holders.** On all 118 holders and all six loads, the centre of the holder and the matrix it is
+drawn with stand at the height of its quad's centre, to the micrometre, and neither is shifted from it,
+up or across. The holders are drawn exactly where their quads are.
+
+**The objects.** Every object of the nearest quad comes back at the same height against the ground at
+every load: within 0.027 mm for half of them, and only one moves by more than 0.1 mm. On average, the
+218 objects stand 323.9 mm below the ground at each of the six loads.
+
+**Nothing else moves.** In the records taken with Terrain Precision Fix alone, an object's height above
+the ground minus its holder's *up* is where that object would stand without the holder's offset. Averaged
+over the six loads of each series, object by object, that height and the one measured here agree to
+0.16 mm (median), 0.9 mm at most: the fix removes the holders' offset, and nothing else about where the
+objects are drawn.
+
+This covers loading a save, with Terrain Precision Fix installed. What it does not cover is listed under
+[What has not been checked](#what-has-not-been-checked).
 
 ## Compatibility
 
@@ -147,7 +180,8 @@ ground the same on every load, as steady as **Rocks − Matrix** was in stock.
 
 ## What has not been checked
 
-- Nothing about this mod has been measured in game yet (see [Results](#results)).
+- This mod without Terrain Precision Fix: only loads with both fixes installed are measured (see
+  [Results](#results)).
 - Kopernicus: see above. Its optional scatter colliders (`scatterColliders`) are children of the holder,
   so they would follow it under the quad. Not tested.
 - Parallax: its source does not reference the stock scatter holders. Not tested with it.

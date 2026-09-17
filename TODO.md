@@ -2,13 +2,11 @@
 
 ## Test in game
 
-Nothing has been run in game yet. With
-[Rock Precision Fix Diag](https://github.com/lhervier/KSP-RockPrecisionFixDiag), one reading recorded
-per step, on stock, with [Terrain Precision Fix](https://github.com/lhervier/KSP-TerrainPrecisionFix),
-and with both:
+Reloads are measured, with [Terrain Precision Fix](https://github.com/lhervier/KSP-TerrainPrecisionFix)
+installed (see [Results](README.md#results)). Still to run, with
+[Rock Precision Fix Diag](https://github.com/lhervier/KSP-RockPrecisionFixDiag) and both fixes installed,
+one reading recorded per step:
 
-- **Reloads**: the same save loaded five or six times. Every holder under its own quad, and under each
-  holder the height of its objects above the ground the same on every load.
 - **Scene switches**: to the Space Center and back, to the Tracking Station and back. No holder should
   be left under a quad that went back to the PQS cache.
 - **Map view** and back, where the terrain keeps being built and destroyed.
