@@ -1,0 +1,458 @@
+[RockPrecisionFixDiag] Record 22 on Mun: scatter on. Heights are distances from the centre of Mun, in metres
+[RockPrecisionFixDiag]   quad 'Mun Zp211333213': height 202846.257784 m, matrix 202846.257784 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202846.257784 m, matrix 202846.257784 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211333212': height 202779.186383 m, matrix 202779.186383 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202779.186383 m, matrix 202779.186383 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211333211': height 202849.621111 m, matrix 202849.621111 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202849.621111 m, matrix 202849.621111 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211333210': height 202816.470602 m, matrix 202816.470602 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202816.470602 m, matrix 202816.470602 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211333203': height 202649.884486 m, matrix 202649.884486 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202649.884486 m, matrix 202649.884486 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211333202': height 202635.572746 m, matrix 202635.572746 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202635.572746 m, matrix 202635.572746 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211333201': height 202733.336392 m, matrix 202733.336392 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202733.336392 m, matrix 202733.336392 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211333200': height 202681.499405 m, matrix 202681.499405 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202681.499405 m, matrix 202681.499405 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211333123': height 202931.375959 m, matrix 202931.375959 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202931.375959 m, matrix 202931.375959 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211333122': height 202880.006986 m, matrix 202880.006986 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202880.006986 m, matrix 202880.006986 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211333121': height 202811.022163 m, matrix 202811.022163 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202811.022163 m, matrix 202811.022163 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211333120': height 202805.576724 m, matrix 202805.576724 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202805.576724 m, matrix 202805.576724 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211333103': height 202667.812781 m, matrix 202667.812781 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202667.812781 m, matrix 202667.812781 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211333102': height 202746.018051 m, matrix 202746.018051 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202746.018051 m, matrix 202746.018051 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211333101': height 202593.173316 m, matrix 202593.173316 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202593.173316 m, matrix 202593.173316 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211333100': height 202635.794705 m, matrix 202635.794705 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202635.794705 m, matrix 202635.794705 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211333033': height 202837.503341 m, matrix 202837.503341 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202837.503341 m, matrix 202837.503341 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211333032': height 202828.507934 m, matrix 202828.507934 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202828.507934 m, matrix 202828.507934 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211333031': height 202829.996533 m, matrix 202829.996533 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202829.996533 m, matrix 202829.996533 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211333030': height 202481.871098 m, matrix 202481.871098 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202481.871098 m, matrix 202481.871098 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211333023': height 202635.512064 m, matrix 202635.512064 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202635.512064 m, matrix 202635.512064 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211333022': height 202567.667052 m, matrix 202567.667052 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202567.667052 m, matrix 202567.667052 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211333021': height 202324.316209 m, matrix 202324.316209 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202324.316209 m, matrix 202324.316209 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211333020': height 202291.416326 m, matrix 202291.416326 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202291.416326 m, matrix 202291.416326 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211333013': height 202522.526839 m, matrix 202522.526839 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202522.526839 m, matrix 202522.526839 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211333012': height 202295.836523 m, matrix 202295.836523 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202295.836523 m, matrix 202295.836523 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211333011': height 202464.089930 m, matrix 202464.089930 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202464.089930 m, matrix 202464.089930 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211333010': height 202233.596008 m, matrix 202233.596008 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202233.596008 m, matrix 202233.596008 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211333003': height 202211.558004 m, matrix 202211.558004 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202211.558004 m, matrix 202211.558004 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211333002': height 202172.848645 m, matrix 202172.848645 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202172.848645 m, matrix 202172.848645 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211333001': height 202138.073702 m, matrix 202138.073702 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202138.073702 m, matrix 202138.073702 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211333000': height 202141.169958 m, matrix 202141.169958 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202141.169958 m, matrix 202141.169958 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211332313': height 202646.209151 m, matrix 202646.209151 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202646.209151 m, matrix 202646.209151 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211332312': height 202665.408020 m, matrix 202665.408020 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202665.408020 m, matrix 202665.408020 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211332311': height 202658.813734 m, matrix 202658.813734 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202658.813734 m, matrix 202658.813734 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211332310': height 202653.540370 m, matrix 202653.540370 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202653.540370 m, matrix 202653.540370 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211332303': height 202691.596762 m, matrix 202691.596762 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202691.596762 m, matrix 202691.596762 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211332302': height 202818.330701 m, matrix 202818.330701 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202818.330701 m, matrix 202818.330701 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211332301': height 202692.275966 m, matrix 202692.275966 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202692.275966 m, matrix 202692.275966 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211332300': height 202795.997740 m, matrix 202795.997740 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202795.997740 m, matrix 202795.997740 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211332133': height 202595.095553 m, matrix 202595.095553 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202595.095553 m, matrix 202595.095553 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211332132': height 202755.060333 m, matrix 202755.060333 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202755.060333 m, matrix 202755.060333 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211332131': height 202350.972033 m, matrix 202350.972033 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202350.972033 m, matrix 202350.972033 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211332130': height 202529.302312 m, matrix 202529.302312 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202529.302312 m, matrix 202529.302312 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211332123': height 202725.681309 m, matrix 202725.681309 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202725.681309 m, matrix 202725.681309 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211332122': height 202784.171180 m, matrix 202784.171180 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202784.171180 m, matrix 202784.171180 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211332121': height 202785.712284 m, matrix 202785.712284 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202785.712284 m, matrix 202785.712284 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211332120': height 202796.747146 m, matrix 202796.747146 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202796.747146 m, matrix 202796.747146 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211332113': height 202196.475005 m, matrix 202196.475005 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202196.475005 m, matrix 202196.475005 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211332112': height 202302.027320 m, matrix 202302.027320 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202302.027320 m, matrix 202302.027320 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211332111': height 202128.637754 m, matrix 202128.637754 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202128.637754 m, matrix 202128.637754 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211332110': height 202204.644144 m, matrix 202204.644144 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202204.644144 m, matrix 202204.644144 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211332103': height 202574.413405 m, matrix 202574.413405 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202574.413405 m, matrix 202574.413405 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211332102': height 202798.107288 m, matrix 202798.107288 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202798.107288 m, matrix 202798.107288 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211332101': height 202440.199218 m, matrix 202440.199218 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202440.199218 m, matrix 202440.199218 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211332100': height 202787.689070 m, matrix 202787.689070 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202787.689070 m, matrix 202787.689070 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211332033': height 202904.838851 m, matrix 202904.838851 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202904.838851 m, matrix 202904.838851 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211332032': height 203072.725133 m, matrix 203072.725133 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 203072.725133 m, matrix 203072.725133 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211332031': height 202893.175876 m, matrix 202893.175876 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202893.175876 m, matrix 202893.175876 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211332030': height 203037.541335 m, matrix 203037.541335 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 203037.541335 m, matrix 203037.541335 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211332013': height 202833.397093 m, matrix 202833.397093 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202833.397093 m, matrix 202833.397093 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211332012': height 202944.381861 m, matrix 202944.381861 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202944.381861 m, matrix 202944.381861 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211332011': height 202765.214486 m, matrix 202765.214486 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202765.214486 m, matrix 202765.214486 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211332010': height 202851.546863 m, matrix 202851.546863 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202851.546863 m, matrix 202851.546863 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211331323': height 202446.499734 m, matrix 202446.499734 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202446.499734 m, matrix 202446.499734 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211331322': height 202534.065178 m, matrix 202534.065178 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202534.065178 m, matrix 202534.065178 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211331321': height 202433.350888 m, matrix 202433.350888 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202433.350888 m, matrix 202433.350888 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211331320': height 202529.882732 m, matrix 202529.882732 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202529.882732 m, matrix 202529.882732 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211331303': height 202624.681821 m, matrix 202624.681821 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202624.681821 m, matrix 202624.681821 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211331302': height 202557.255873 m, matrix 202557.255873 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202557.255873 m, matrix 202557.255873 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211331301': height 202578.387920 m, matrix 202578.387920 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202578.387920 m, matrix 202578.387920 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211331300': height 202519.357760 m, matrix 202519.357760 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202519.357760 m, matrix 202519.357760 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211331233': height 202286.625367 m, matrix 202286.625367 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202286.625367 m, matrix 202286.625367 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211331232': height 202233.292434 m, matrix 202233.292434 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202233.292434 m, matrix 202233.292434 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211331231': height 202298.297207 m, matrix 202298.297207 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202298.297207 m, matrix 202298.297207 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211331230': height 202249.652603 m, matrix 202249.652603 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202249.652603 m, matrix 202249.652603 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211331223': height 202124.204658 m, matrix 202124.204658 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202124.204658 m, matrix 202124.204658 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211331222': height 202121.991523 m, matrix 202121.991523 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202121.991523 m, matrix 202121.991523 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211331221': height 202140.023276 m, matrix 202140.023276 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202140.023276 m, matrix 202140.023276 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211331220': height 202099.773841 m, matrix 202099.773841 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202099.773841 m, matrix 202099.773841 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211331213': height 202491.881540 m, matrix 202491.881540 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202491.881540 m, matrix 202491.881540 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211331212': height 202343.480652 m, matrix 202343.480652 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202343.480652 m, matrix 202343.480652 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211331211': height 202468.511353 m, matrix 202468.511353 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202468.511353 m, matrix 202468.511353 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211331210': height 202538.402440 m, matrix 202538.402440 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202538.402440 m, matrix 202538.402440 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211331203': height 202268.873550 m, matrix 202268.873550 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202268.873550 m, matrix 202268.873550 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211331202': height 202217.943596 m, matrix 202217.943596 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202217.943596 m, matrix 202217.943596 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211331201': height 202274.124607 m, matrix 202274.124607 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202274.124607 m, matrix 202274.124607 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211331200': height 202291.418239 m, matrix 202291.418239 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202291.418239 m, matrix 202291.418239 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211331033': height 202519.894414 m, matrix 202519.894414 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202519.894414 m, matrix 202519.894414 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211331032': height 202513.700691 m, matrix 202513.700691 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202513.700691 m, matrix 202513.700691 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211331031': height 202735.484737 m, matrix 202735.484737 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202735.484737 m, matrix 202735.484737 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211331030': height 202655.638153 m, matrix 202655.638153 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202655.638153 m, matrix 202655.638153 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211331023': height 202509.398743 m, matrix 202509.398743 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202509.398743 m, matrix 202509.398743 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211331022': height 202568.396744 m, matrix 202568.396744 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202568.396744 m, matrix 202568.396744 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211331021': height 202631.736290 m, matrix 202631.736290 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202631.736290 m, matrix 202631.736290 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211331020': height 202658.938089 m, matrix 202658.938089 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202658.938089 m, matrix 202658.938089 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211330333': height 202093.202619 m, matrix 202093.202619 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202093.202619 m, matrix 202093.202619 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211330332': height 202196.340578 m, matrix 202196.340578 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202196.340578 m, matrix 202196.340578 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211330331': height 202137.821485 m, matrix 202137.821485 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202137.821485 m, matrix 202137.821485 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211330330': height 202243.552132 m, matrix 202243.552132 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202243.552132 m, matrix 202243.552132 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211330323': height 202424.884456 m, matrix 202424.884456 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202424.884456 m, matrix 202424.884456 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211330322': height 202745.477293 m, matrix 202745.477293 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202745.477293 m, matrix 202745.477293 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211330321': height 202532.447021 m, matrix 202532.447021 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202532.447021 m, matrix 202532.447021 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211330320': height 202747.280294 m, matrix 202747.280294 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202747.280294 m, matrix 202747.280294 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211330313': height 202239.882755 m, matrix 202239.882755 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202239.882755 m, matrix 202239.882755 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211330312': height 202414.623384 m, matrix 202414.623384 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202414.623384 m, matrix 202414.623384 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211330311': height 202544.398860 m, matrix 202544.398860 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202544.398860 m, matrix 202544.398860 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211330310': height 202751.159200 m, matrix 202751.159200 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202751.159200 m, matrix 202751.159200 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211330303': height 202791.847251 m, matrix 202791.847251 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202791.847251 m, matrix 202791.847251 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211330302': height 202727.267478 m, matrix 202727.267478 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202727.267478 m, matrix 202727.267478 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211330301': height 202748.280171 m, matrix 202748.280171 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202748.280171 m, matrix 202748.280171 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211330300': height 202725.965735 m, matrix 202725.965735 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202725.965735 m, matrix 202725.965735 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211330233': height 202697.581094 m, matrix 202697.581094 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202697.581094 m, matrix 202697.581094 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211330232': height 202766.028456 m, matrix 202766.028456 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202766.028456 m, matrix 202766.028456 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211330231': height 202683.174737 m, matrix 202683.174737 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202683.174737 m, matrix 202683.174737 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211330230': height 202738.936516 m, matrix 202738.936516 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202738.936516 m, matrix 202738.936516 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211330213': height 202697.298358 m, matrix 202697.298358 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202697.298358 m, matrix 202697.298358 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211330212': height 202770.818214 m, matrix 202770.818214 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202770.818214 m, matrix 202770.818214 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211330211': height 202735.811415 m, matrix 202735.811415 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202735.811415 m, matrix 202735.811415 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211330210': height 202838.957082 m, matrix 202838.957082 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202838.957082 m, matrix 202838.957082 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211330133': height 202588.416526 m, matrix 202588.416526 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202588.416526 m, matrix 202588.416526 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211330132': height 202536.287157 m, matrix 202536.287157 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202536.287157 m, matrix 202536.287157 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211330131': height 202610.940063 m, matrix 202610.940063 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202610.940063 m, matrix 202610.940063 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211330130': height 202518.671673 m, matrix 202518.671673 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202518.671673 m, matrix 202518.671673 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211330123': height 202607.515453 m, matrix 202607.515453 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202607.515453 m, matrix 202607.515453 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211330122': height 202749.538339 m, matrix 202749.538339 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202749.538339 m, matrix 202749.538339 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211330121': height 202621.046490 m, matrix 202621.046490 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202621.046490 m, matrix 202621.046490 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   quad 'Mun Zp211330120': height 202754.991278 m, matrix 202754.991278 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]     holder 'Rock00': built, height 202754.991278 m, matrix 202754.991278 m, up 0.000 mm, across 0.000 mm
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #0 vertex 120: ground 202136.197607 m, vertex 202135.094185 m, -1103.421 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #0 vertex 104: ground 202136.258347 m, vertex 202136.953772 m, +695.425 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #0 vertex 35: ground 202136.172811 m, vertex 202137.369994 m, +1197.183 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #0 vertex 62: ground 202136.151857 m, vertex 202136.605493 m, +453.636 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #0 vertex 173: ground 202136.311205 m, vertex 202135.928804 m, -382.401 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #0 vertex 15: ground 202136.233746 m, vertex 202135.444495 m, -789.251 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #0 vertex 21: ground 202136.214287 m, vertex 202135.975208 m, -239.080 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #0 vertex 34: ground 202136.266073 m, vertex 202137.028104 m, +762.031 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #0 vertex 0: ground 202136.139059 m, vertex 202135.809427 m, -329.632 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #0 vertex 90: ground 202136.224537 m, vertex 202137.305345 m, +1080.808 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #1 vertex 120: ground 202142.437766 m, vertex 202140.877508 m, -1560.258 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #1 vertex 104: ground 202142.477259 m, vertex 202143.476180 m, +998.921 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #1 vertex 35: ground 202142.412221 m, vertex 202144.059008 m, +1646.787 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #1 vertex 62: ground 202142.497609 m, vertex 202142.987834 m, +490.226 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #1 vertex 173: ground 202142.357076 m, vertex 202142.045702 m, -311.374 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #1 vertex 15: ground 202142.502352 m, vertex 202141.366084 m, -1136.268 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #1 vertex 21: ground 202142.361804 m, vertex 202142.110566 m, -251.238 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #1 vertex 34: ground 202142.375156 m, vertex 202143.581992 m, +1206.836 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #1 vertex 0: ground 202142.418349 m, vertex 202141.877061 m, -541.288 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #1 vertex 90: ground 202142.466725 m, vertex 202143.967792 m, +1501.067 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #2 vertex 120: ground 202139.296971 m, vertex 202135.452073 m, -3844.898 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #2 vertex 104: ground 202139.143759 m, vertex 202141.638937 m, +2495.178 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #2 vertex 35: ground 202139.357635 m, vertex 202143.028827 m, +3671.192 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #2 vertex 62: ground 202139.447585 m, vertex 202140.482807 m, +1035.222 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #2 vertex 173: ground 202139.253597 m, vertex 202138.227351 m, -1026.246 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #2 vertex 15: ground 202139.154353 m, vertex 202136.615498 m, -2538.856 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #2 vertex 21: ground 202139.347934 m, vertex 202138.385183 m, -962.751 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #2 vertex 34: ground 202139.279030 m, vertex 202141.888039 m, +2609.010 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #2 vertex 0: ground 202139.468855 m, vertex 202137.834880 m, -1633.974 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #2 vertex 90: ground 202139.221130 m, vertex 202142.811192 m, +3590.062 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #3 vertex 120: ground 202140.943515 m, vertex 202137.102818 m, -3840.698 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #3 vertex 104: ground 202140.852330 m, vertex 202143.362346 m, +2510.016 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #3 vertex 35: ground 202140.977049 m, vertex 202144.776578 m, +3799.529 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #3 vertex 62: ground 202140.826791 m, vertex 202142.194775 m, +1367.985 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #3 vertex 173: ground 202140.987454 m, vertex 202139.910197 m, -1077.256 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #3 vertex 15: ground 202140.837479 m, vertex 202138.276250 m, -2561.229 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #3 vertex 21: ground 202141.026524 m, vertex 202140.074592 m, -951.932 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #3 vertex 34: ground 202140.988826 m, vertex 202143.618497 m, +2629.671 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #3 vertex 0: ground 202140.956012 m, vertex 202139.517986 m, -1438.026 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #3 vertex 90: ground 202140.903458 m, vertex 202144.552191 m, +3648.733 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #4 vertex 120: ground 202152.977464 m, vertex 202152.438996 m, -538.468 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #4 vertex 104: ground 202153.087898 m, vertex 202154.243408 m, +1155.510 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #4 vertex 35: ground 202152.929331 m, vertex 202154.651613 m, +1722.282 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #4 vertex 62: ground 202153.103216 m, vertex 202153.905039 m, +801.823 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #4 vertex 173: ground 202152.954488 m, vertex 202153.250139 m, +295.651 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #4 vertex 15: ground 202153.100380 m, vertex 202152.776591 m, -323.788 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #4 vertex 21: ground 202152.879203 m, vertex 202153.297166 m, +417.963 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #4 vertex 34: ground 202152.940422 m, vertex 202154.318833 m, +1378.411 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #4 vertex 0: ground 202152.945937 m, vertex 202153.134895 m, +188.958 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #4 vertex 90: ground 202153.032352 m, vertex 202154.586412 m, +1554.060 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #5 vertex 120: ground 202136.551213 m, vertex 202132.845116 m, -3706.098 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #5 vertex 104: ground 202136.274367 m, vertex 202138.773230 m, +2498.863 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #5 vertex 35: ground 202136.627995 m, vertex 202140.098394 m, +3470.399 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #5 vertex 62: ground 202136.780651 m, vertex 202137.659966 m, +879.315 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #5 vertex 173: ground 202136.085367 m, vertex 202135.508405 m, -576.963 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #5 vertex 15: ground 202136.387364 m, vertex 202133.962085 m, -2425.279 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #5 vertex 21: ground 202136.438102 m, vertex 202135.654462 m, -783.641 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #5 vertex 34: ground 202136.259571 m, vertex 202139.011049 m, +2751.479 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #5 vertex 0: ground 202136.770994 m, vertex 202135.123518 m, -1647.476 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #5 vertex 90: ground 202136.459425 m, vertex 202139.892837 m, +3433.412 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #6 vertex 120: ground 202140.662634 m, vertex 202139.299485 m, -1363.148 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #6 vertex 104: ground 202140.695921 m, vertex 202141.279592 m, +583.672 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #6 vertex 35: ground 202140.650454 m, vertex 202141.726063 m, +1075.609 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #6 vertex 62: ground 202140.674597 m, vertex 202140.909427 m, +234.830 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #6 vertex 173: ground 202140.681790 m, vertex 202140.188178 m, -493.612 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #6 vertex 15: ground 202140.692840 m, vertex 202139.670965 m, -1021.875 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #6 vertex 21: ground 202140.651201 m, vertex 202140.239449 m, -411.752 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #6 vertex 34: ground 202140.670686 m, vertex 202141.360553 m, +689.867 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #6 vertex 0: ground 202140.646244 m, vertex 202140.062812 m, -583.431 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #6 vertex 90: ground 202140.676855 m, vertex 202141.655484 m, +978.629 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #7 vertex 120: ground 202133.476803 m, vertex 202131.811225 m, -1665.578 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #7 vertex 104: ground 202133.606434 m, vertex 202134.605031 m, +998.597 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #7 vertex 35: ground 202133.441023 m, vertex 202135.228317 m, +1787.295 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #7 vertex 62: ground 202133.537658 m, vertex 202134.079618 m, +541.959 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #7 vertex 173: ground 202133.539882 m, vertex 202133.066856 m, -473.027 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #7 vertex 15: ground 202133.599887 m, vertex 202132.338107 m, -1261.780 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #7 vertex 21: ground 202133.447186 m, vertex 202133.134821 m, -312.365 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #7 vertex 34: ground 202133.505161 m, vertex 202134.716752 m, +1211.591 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #7 vertex 0: ground 202133.426439 m, vertex 202132.884178 m, -542.261 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #7 vertex 90: ground 202133.523742 m, vertex 202135.132044 m, +1608.303 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #8 vertex 120: ground 202140.419654 m, vertex 202139.362607 m, -1057.046 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #8 vertex 104: ground 202140.365803 m, vertex 202141.098256 m, +732.453 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #8 vertex 35: ground 202140.416565 m, vertex 202141.488377 m, +1071.812 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #8 vertex 62: ground 202140.460676 m, vertex 202140.771418 m, +310.742 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #8 vertex 173: ground 202140.359103 m, vertex 202140.143677 m, -215.426 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #8 vertex 15: ground 202140.384464 m, vertex 202139.688344 m, -696.120 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #8 vertex 21: ground 202140.390125 m, vertex 202140.187183 m, -202.942 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #8 vertex 34: ground 202140.387106 m, vertex 202141.169974 m, +782.868 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #8 vertex 0: ground 202140.432207 m, vertex 202140.030391 m, -401.816 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #8 vertex 90: ground 202140.417063 m, vertex 202141.426893 m, +1009.830 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #9 vertex 120: ground 202124.305591 m, vertex 202122.036290 m, -2269.301 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #9 vertex 104: ground 202124.392452 m, vertex 202125.833090 m, +1440.638 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #9 vertex 35: ground 202124.253010 m, vertex 202126.692708 m, +2439.699 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #9 vertex 62: ground 202124.415737 m, vertex 202125.129876 m, +714.139 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #9 vertex 173: ground 202124.278077 m, vertex 202123.734565 m, -543.512 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #9 vertex 15: ground 202124.404061 m, vertex 202122.748209 m, -1655.852 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #9 vertex 21: ground 202124.197778 m, vertex 202123.836913 m, -360.865 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #9 vertex 34: ground 202124.263348 m, vertex 202125.986317 m, +1722.968 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #9 vertex 0: ground 202124.272179 m, vertex 202123.503603 m, -768.576 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #9 vertex 90: ground 202124.359150 m, vertex 202126.556251 m, +2197.100 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #10 vertex 120: ground 202136.255962 m, vertex 202132.970110 m, -3285.853 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #10 vertex 104: ground 202136.275425 m, vertex 202138.362587 m, +2087.162 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #10 vertex 35: ground 202136.244886 m, vertex 202139.568545 m, +3323.659 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #10 vertex 62: ground 202136.440528 m, vertex 202137.346819 m, +906.291 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #10 vertex 173: ground 202136.154014 m, vertex 202135.395915 m, -758.099 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #10 vertex 15: ground 202136.299758 m, vertex 202133.985208 m, -2314.549 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #10 vertex 21: ground 202136.151471 m, vertex 202135.527955 m, -623.515 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #10 vertex 34: ground 202136.169159 m, vertex 202138.581382 m, +2412.223 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #10 vertex 0: ground 202136.314978 m, vertex 202135.041940 m, -1273.038 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #10 vertex 90: ground 202136.265556 m, vertex 202139.380865 m, +3115.309 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #11 vertex 120: ground 202141.504067 m, vertex 202139.500745 m, -2003.322 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #11 vertex 104: ground 202141.449719 m, vertex 202142.747671 m, +1297.953 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #11 vertex 35: ground 202141.529740 m, vertex 202143.481680 m, +1951.940 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #11 vertex 62: ground 202141.519076 m, vertex 202142.142509 m, +623.433 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #11 vertex 173: ground 202141.469766 m, vertex 202140.956588 m, -513.178 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #11 vertex 15: ground 202141.464704 m, vertex 202140.109316 m, -1355.388 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #11 vertex 21: ground 202141.531456 m, vertex 202141.042239 m, -489.217 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #11 vertex 34: ground 202141.491326 m, vertex 202142.880514 m, +1389.188 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #11 vertex 0: ground 202141.536596 m, vertex 202140.753873 m, -782.723 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #11 vertex 90: ground 202141.478889 m, vertex 202143.365122 m, +1886.233 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #12 vertex 120: ground 202142.330664 m, vertex 202140.280040 m, -2050.624 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #12 vertex 104: ground 202142.199702 m, vertex 202144.873909 m, +2674.207 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #12 vertex 35: ground 202142.382147 m, vertex 202145.905045 m, +3522.898 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #12 vertex 62: ground 202142.246921 m, vertex 202144.010981 m, +1764.060 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #12 vertex 173: ground 202142.292271 m, vertex 202142.344973 m, +52.702 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #12 vertex 15: ground 202142.202012 m, vertex 202141.143387 m, -1058.625 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #12 vertex 21: ground 202142.401593 m, vertex 202142.460168 m, +58.575 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #12 vertex 34: ground 202142.326353 m, vertex 202145.061296 m, +2734.943 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #12 vertex 0: ground 202142.385566 m, vertex 202142.047528 m, -338.037 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #12 vertex 90: ground 202142.271511 m, vertex 202145.743372 m, +3471.860 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #13 vertex 120: ground 202142.082529 m, vertex 202141.677839 m, -404.690 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #13 vertex 104: ground 202142.086590 m, vertex 202142.324323 m, +237.733 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #13 vertex 35: ground 202142.082064 m, vertex 202142.470423 m, +388.359 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #13 vertex 62: ground 202142.072564 m, vertex 202142.202405 m, +129.841 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #13 vertex 173: ground 202142.096351 m, vertex 202141.969091 m, -127.260 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #13 vertex 15: ground 202142.083211 m, vertex 202141.798718 m, -284.493 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #13 vertex 21: ground 202142.089141 m, vertex 202141.985633 m, -103.507 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #13 vertex 34: ground 202142.091977 m, vertex 202142.351697 m, +259.720 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #13 vertex 0: ground 202142.077512 m, vertex 202141.926884 m, -150.628 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #13 vertex 90: ground 202142.083241 m, vertex 202142.447052 m, +363.810 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #14 vertex 120: ground 202146.090470 m, vertex 202145.393501 m, -696.969 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #14 vertex 104: ground 202146.060692 m, vertex 202146.653047 m, +592.355 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #14 vertex 35: ground 202146.102734 m, vertex 202146.939127 m, +836.394 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #14 vertex 62: ground 202146.064726 m, vertex 202146.418642 m, +353.916 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #14 vertex 173: ground 202146.088469 m, vertex 202145.958175 m, -130.294 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #14 vertex 15: ground 202146.059461 m, vertex 202145.628956 m, -430.505 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #14 vertex 21: ground 202146.111265 m, vertex 202145.992184 m, -119.082 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #14 vertex 34: ground 202146.094421 m, vertex 202146.705276 m, +610.854 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #14 vertex 0: ground 202146.101157 m, vertex 202145.880341 m, -220.816 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #14 vertex 90: ground 202146.076412 m, vertex 202146.893211 m, +816.800 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #15 vertex 120: ground 202145.788377 m, vertex 202145.380790 m, -407.587 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #15 vertex 104: ground 202145.729387 m, vertex 202146.649657 m, +920.270 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #15 vertex 35: ground 202145.806474 m, vertex 202146.935435 m, +1128.961 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #15 vertex 62: ground 202145.805383 m, vertex 202146.411633 m, +606.250 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #15 vertex 173: ground 202145.716019 m, vertex 202145.951009 m, +234.990 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #15 vertex 15: ground 202145.744954 m, vertex 202145.618824 m, -126.130 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #15 vertex 21: ground 202145.781837 m, vertex 202145.983421 m, +201.584 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #15 vertex 34: ground 202145.745767 m, vertex 202146.701864 m, +956.097 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #15 vertex 0: ground 202145.827551 m, vertex 202145.869532 m, +41.980 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #15 vertex 90: ground 202145.766550 m, vertex 202146.890284 m, +1123.734 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #16 vertex 120: ground 202128.226196 m, vertex 202125.543045 m, -2683.151 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #16 vertex 104: ground 202128.382100 m, vertex 202129.599104 m, +1217.003 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #16 vertex 35: ground 202128.143713 m, vertex 202130.517002 m, +2373.290 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #16 vertex 62: ground 202128.545258 m, vertex 202128.846511 m, +301.253 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #16 vertex 173: ground 202128.051108 m, vertex 202127.358548 m, -692.560 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #16 vertex 15: ground 202128.437992 m, vertex 202126.303499 m, -2134.493 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #16 vertex 21: ground 202127.987019 m, vertex 202127.467203 m, -519.816 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #16 vertex 34: ground 202128.067798 m, vertex 202129.763436 m, +1695.639 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #16 vertex 0: ground 202128.218428 m, vertex 202127.109940 m, -1108.487 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #16 vertex 90: ground 202128.315515 m, vertex 202130.371290 m, +2055.775 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #17 vertex 120: ground 202139.663098 m, vertex 202136.876158 m, -2786.940 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #17 vertex 104: ground 202139.777401 m, vertex 202141.585586 m, +1808.184 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #17 vertex 35: ground 202139.564717 m, vertex 202142.646215 m, +3081.498 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #17 vertex 62: ground 202139.934292 m, vertex 202140.709027 m, +774.735 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #17 vertex 173: ground 202139.398122 m, vertex 202138.985770 m, -412.352 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #17 vertex 15: ground 202139.865616 m, vertex 202137.761147 m, -2104.469 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #17 vertex 21: ground 202139.447939 m, vertex 202139.108449 m, -339.490 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #17 vertex 34: ground 202139.469527 m, vertex 202141.774672 m, +2305.145 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #17 vertex 0: ground 202139.606519 m, vertex 202138.692240 m, -914.280 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #17 vertex 90: ground 202139.772880 m, vertex 202142.479531 m, +2706.651 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #18 vertex 120: ground 202140.596025 m, vertex 202140.128271 m, -467.753 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #18 vertex 104: ground 202140.571368 m, vertex 202140.620317 m, +48.949 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #18 vertex 35: ground 202140.603923 m, vertex 202140.731141 m, +127.218 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #18 vertex 62: ground 202140.599763 m, vertex 202140.527539 m, -72.224 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #18 vertex 173: ground 202140.569173 m, vertex 202140.349861 m, -219.312 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #18 vertex 15: ground 202140.576970 m, vertex 202140.220471 m, -356.498 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #18 vertex 21: ground 202140.595667 m, vertex 202140.362266 m, -233.401 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #18 vertex 34: ground 202140.580733 m, vertex 202140.640890 m, +60.156 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #18 vertex 0: ground 202140.611518 m, vertex 202140.317645 m, -293.873 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #18 vertex 90: ground 202140.586620 m, vertex 202140.713567 m, +126.947 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #19 vertex 120: ground 202148.610130 m, vertex 202144.749825 m, -3860.304 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #19 vertex 104: ground 202147.834155 m, vertex 202151.026644 m, +3192.489 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #19 vertex 35: ground 202148.889197 m, vertex 202152.465641 m, +3576.443 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #19 vertex 62: ground 202148.345557 m, vertex 202149.861318 m, +1515.760 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #19 vertex 173: ground 202148.148629 m, vertex 202147.563784 m, -584.845 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #19 vertex 15: ground 202147.911599 m, vertex 202145.916962 m, -1994.637 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #19 vertex 21: ground 202148.864381 m, vertex 202147.740855 m, -1123.526 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #19 vertex 34: ground 202148.409381 m, vertex 202151.294313 m, +2884.932 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #19 vertex 0: ground 202148.994508 m, vertex 202147.183033 m, -1811.475 mm above the ground
+[RockPrecisionFixDiag]   rock 'Mun Zp211333000' 'Rock00' #19 vertex 90: ground 202148.278159 m, vertex 202152.229711 m, +3951.551 mm above the ground
+[RockPrecisionFixDiag] End of record 22: 128 quads with rocks, 128 holders (0 not built yet); nearest quad 'Mun Zp211333000': 20 rocks, 200 vertices measured, 0 without ground under them

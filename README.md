@@ -25,9 +25,10 @@ nobody sees it.
 
 This fix exists for another reason. [Terrain Precision Fix](https://github.com/lhervier/KSP-TerrainPrecisionFix)
 changes where KSP builds the ground: it moves the terrain quads, not the scatter drawn on them, and the
-scatter ends up drawn further from the ground than in stock. Nobody sees that either. But a fix that makes
-anything worse, even something invisible, has to answer for it, and this mod is that answer: with both
-installed, the ground and the scatter on it come back at the same place at every load.
+scatter no longer follows the ground it is drawn on: in stock it sometimes comes back exactly on its quad,
+with Terrain Precision Fix never. Nobody sees that either. But a fix that leaves something behind, even
+something invisible, has to answer for it, and this mod is that answer: with both installed, the ground and
+the scatter on it come back at the same place at every load.
 
 ### Disclaimer: it is meant to go with Terrain Precision Fix
 
@@ -51,18 +52,21 @@ That position is written as it is into the mesh of a *holder*, a `PQSMod_LandCla
 from a pool, one per kind of scatter on the quad. So the objects stand on the ground only if the holder
 is drawn with the same origin as the quad.
 
-One value in that method does use the long vector, and gets it right: the local vertical of each object,
-along which the object is then sunk into the ground and around which it is turned. It is the direction
-from the centre of the body to the object:
+One value in that method does use the long vector: the local vertical of each object, along which the
+object is then sunk into the ground and around which it is turned. It is the direction from the centre of
+the body to the object:
 
 ```csharp
 scatterUp = (scatterPos + q.quad.positionPlanet).normalized;
 scatterPos += scatterUp * verticalOffset;
 ```
 
-`positionPlanet` is a `Vector3d`, so the sum is computed in double precision and normalised there. Only
-the result goes into a float, and it is a unit vector, which a float holds to about seven significant
-digits. Nothing is rounded to 62.5 mm there, and that line needs no patch.
+That line needs no patch, and this is measured, not only read. An object sunk or turned along a vertical
+that changed from one load to the next would come back leaning another way, its vertices higher or lower
+against each other. On every series of [Rock Precision Fix Diag](https://github.com/lhervier/KSP-RockPrecisionFixDiag/blob/main/README.md#what-the-readings-show),
+on Kerbin and on the Mun, on stock and with Terrain Precision Fix, the heights of the measured vertices of
+each object against each other come back the same at every load to within 0.07 mm, trees 20 m tall
+included.
 
 Both are placed from the same double precision vector, the origin of the quad relative to the centre of
 the body, hundreds of kilometres long, stored in a float `localPosition` under the terrain sphere, whose
@@ -114,16 +118,21 @@ measures what stock does. Its page carries its method and
 [its protocol](https://github.com/lhervier/KSP-RockPrecisionFixDiag/blob/main/README.md#the-protocol).
 For every quad carrying scatter around a landed craft, it reads the height of the quad, of each of its
 holders, and of the matrices they are drawn with; for every object of the quad nearest to the craft, the
-height of its lowest point above the ground right under it. Scatter is sunk into the ground on purpose,
-so that last height says little by itself: what matters is whether it comes back the same at every load.
+height above the ground right under them of up to 10 of its vertices, spread over the whole object.
+Scatter is sunk into the ground on purpose, so that last height says little by itself: what matters is
+whether it comes back the same at every load.
 
-Every series below uses
-[the save it keeps](https://github.com/lhervier/KSP-RockPrecisionFixDiag/blob/main/perfs/README.md#the-save):
-a Mk1 command pod landed on Kerbin, about 8 km north-west of the KSC, where the scatter is grass and
-trees, loaded six times, in KSP 1.12.5 with Harmony, ModuleManager and KSP Community Fixes 1.41.1. Every
-record holds the same 64 quads and 118 holders, all of them built, and names the same nearest quad,
-`Kerbin Zn3010000130`, with the same 218 objects: 200 `Grass00` and 18 `Tree00`. The *range* of a
-reading is its largest value minus its smallest over the six loads.
+Every series below uses [the two saves it keeps](https://github.com/lhervier/KSP-RockPrecisionFixDiag/blob/main/perfs/README.md#the-saves), each loaded twelve
+times, in KSP 1.12.5 with Harmony, ModuleManager and KSP Community Fixes 1.41.1:
+
+- a Mk1 command pod landed on Kerbin, about 8 km north-west of the KSC, where the scatter is grass and
+  trees: every record holds the same 64 quads and 118 holders, all of them built, and names the same
+  nearest quad, `Kerbin Zn3010000130`, with the same 218 objects, 200 `Grass00` and 18 `Tree00`, and 1,780
+  measured vertices;
+- a Mk1 command pod landed on the Mun, where the scatter is rocks: 128 quads and 128 holders, and the same
+  nearest quad, `Mun Zp211333000`, with 20 `Rock00` and 200 measured vertices.
+
+The *range* of a reading is its largest value minus its smallest over the twelve loads.
 
 ### Rock Precision Fix Diag, on stock
 
@@ -133,62 +142,81 @@ On stock:
 
 - the centre of each holder stands at the height of its quad's centre, to the micrometre;
 - the matrix each quad is drawn with stands exactly on its centre: 0.000 mm everywhere, up and across;
-- the matrix each holder is drawn with does not: it stands from −84 to +85 mm above its quad's centre,
-  by an amount that changes from one holder to the next and from one load to the next, and is 0.000 mm
-  only a third of the time;
-- every object of the nearest quad comes back at a different height above the ground at every load:
-  44 mm apart over the six loads for half of them, from 27 to 116 mm;
-- take its holder's offset off, and that range drops to 2 mm for half of them.
+- the matrix each holder is drawn with does not: it stands above or below its quad's centre by an amount
+  that changes from one holder to the next and from one load to the next, from −92 to +92 mm on Kerbin,
+  0.000 mm only 28% of the time; on the Mun, within 0.1 mm of 0 three times out of four, otherwise
+  ±15.2 to ±15.4 mm, nothing in between;
+- the vertices of the objects of the nearest quad come back at a different height above the ground at
+  every load: 94 mm apart over the twelve loads for half of them on Kerbin, 31 mm on the Mun;
+- take their holder's offset off, and that range drops to 5.3 mm for half of them on Kerbin, 2.2 mm on
+  the Mun.
 
 The holders stand where their quads are, but are not drawn there, and most of what moves the objects
 against the ground is that gap. That is the culprit.
 
-Not all of it: 60 objects keep more than 10 mm once their holder's offset is taken off, up to 82 mm. In
-stock the ground itself moves against the centre of its quad from one load to the next, by 54 mm under
-half of the objects: that is the defect Terrain Precision Fix corrects, and it is why this fix is measured
-with it.
+Not all of it: once their holder's offset is taken off, 80 objects out of 218 keep more than 10 mm on
+Kerbin, up to 119 mm, and 3 rocks out of 20 on the Mun, up to 18.5 mm. In stock the ground itself moves
+against the centre of its quad from one load to the next, by 104 mm under half of the vertices on Kerbin
+and 27 mm on the Mun: that is the defect Terrain Precision Fix corrects, and it is why this fix is
+measured with it.
 
 ### Rock Precision Fix Diag, with Terrain Precision Fix alone
 
 With Terrain Precision Fix installed, the quads stop moving: the centre of the nearest quad comes back at
-the same height to 0.001 mm, against 126 mm in stock. The holders do not follow them:
+the same height to 0.002 mm on Kerbin, against 131 mm in stock, and to 0.005 mm on the Mun, against
+33 mm. The holders do not follow them:
 
-- their centres no longer stand on their quads': 137 mm apart over the six loads for half of the holders,
-  up to 201 mm;
-- the offset of their matrices spans −60 to +176 mm, and is never 0;
-- every object of the nearest quad comes back at a different height above the ground at every load,
-  129 mm apart for half of them, from 125 to 134 mm: about three times as far as in stock;
-- take its holder's offset off, and no object moves by more than 6.9 mm.
+- their centres no longer stand on their quads': 148 mm apart over the twelve loads for half of the
+  holders on Kerbin, up to 227 mm, and 25 mm on the Mun, up to 42 mm;
+- the offset of their matrices spans −107 to +110 mm on Kerbin and −27 to +29 mm on the Mun, and is never
+  0;
+- the vertices of the objects of the nearest quad come back at a different height above the ground at
+  every load: 130 mm apart for half of them on Kerbin, 31 mm on the Mun;
+- take their holder's offset off, and no vertex moves by more than 6.6 mm on Kerbin, 1.9 mm on the Mun.
 
 The ground is fixed, the holders are not, and now all of what moves the objects is the holders.
 
 ### Rock Precision Fix Diag, with this mod
 
-The same install and the same save, with this mod added next to Terrain Precision Fix, the save loaded
-six times in a single session of KSP, one record taken after each load. The install and the six records
-are under [perfs](perfs/README.md).
+The same install and the same two saves, with this mod added next to Terrain Precision Fix, each save
+loaded twelve times in a single session of KSP, one record taken after each load. The install and the 24
+records are under [perfs](perfs/README.md).
+
+**Kerbin**
 
 | | with Terrain Precision Fix alone | with both fixes |
 |---|---|---|
-| centre of the nearest quad, range | 0.001 mm | 0.001 mm |
+| centre of the nearest quad, range | 0.002 mm | 0.002 mm |
 | matrix of each quad against its centre | *up* and *across* 0.000 mm everywhere | the same |
-| centre of each holder against its quad's | range 137 mm (median over the holders), up to 201 mm | the same height, to the micrometre |
-| *up* of the holders' matrices | −60 to +176 mm, never 0 | 0.000 mm everywhere, and *across* as well |
-| each object above the ground, range | 129 mm (median over the objects), from 125 to 134 mm | 0.027 mm (median), 0.114 mm at most |
+| centre of each holder against its quad's | range 148 mm (median over the holders), up to 227 mm | the same height, to the micrometre |
+| *up* of the holders' matrices | −107 to +110 mm, never 0 | 0.000 mm everywhere, and *across* as well |
+| each vertex above the ground, range | 130 mm (median over the vertices), from 127 to 134 mm | 0.035 mm (median), 0.125 mm at most |
 
-**The holders.** On all 118 holders and all six loads, the centre of the holder and the matrix it is
-drawn with stand at the height of its quad's centre, to the micrometre, and neither is shifted from it,
-up or across. The holders are drawn exactly where their quads are.
+**The Mun**
 
-**The objects.** Every object of the nearest quad comes back at the same height against the ground at
-every load: within 0.027 mm for half of them, and only one moves by more than 0.1 mm. On average, the
-218 objects stand 323.9 mm below the ground at each of the six loads.
+| | with Terrain Precision Fix alone | with both fixes |
+|---|---|---|
+| centre of the nearest quad, range | 0.005 mm | 0.004 mm |
+| matrix of each quad against its centre | *up* and *across* 0.000 mm everywhere | the same |
+| centre of each holder against its quad's | range 25 mm (median over the holders), up to 42 mm | the same height, to the micrometre |
+| *up* of the holders' matrices | −27 to +29 mm, never 0 | 0.000 mm everywhere, and *across* as well |
+| each vertex above the ground, range | 31 mm (median over the vertices), from 30 to 32 mm | 0.012 mm (median), 0.042 mm at most |
 
-**Nothing else moves.** In the records taken with Terrain Precision Fix alone, an object's height above
-the ground minus its holder's *up* is where that object would stand without the holder's offset. Averaged
-over the six loads of each series, object by object, that height and the one measured here agree to
-0.16 mm (median), 0.9 mm at most: the fix removes the holders' offset, and nothing else about where the
-objects are drawn.
+**The holders.** On all 118 holders of Kerbin and 128 of the Mun, at every one of the twelve loads, the
+centre of the holder and the matrix it is drawn with stand at the height of its quad's centre, to the
+micrometre, and neither is shifted from it, up or across. The holders are drawn exactly where their quads
+are.
+
+**The objects.** Every measured vertex of the nearest quad comes back at the same height against the
+ground at every load: within 0.035 mm for half of them on Kerbin, 0.125 mm at most, and within 0.042 mm on
+the Mun. On average, the lowest vertex of each object's model stands 316.8 mm below the ground on Kerbin
+and 1,979.8 mm on the Mun, the same at each of the twelve loads.
+
+**Nothing else moves.** In the records taken with Terrain Precision Fix alone, a vertex's height above the
+ground minus its holder's *up* is where that vertex would stand without the holder's offset. Averaged over
+the twelve loads of each series, vertex by vertex, that height and the one measured here agree to 0.018 mm
+(median), 1.2 mm at most, on Kerbin, and to 0.080 mm (median), 0.30 mm at most, on the Mun: the fix removes
+the holders' offset, and nothing else about where the objects are drawn.
 
 This is also the last proof that the culprit is the right one. The fix changes the transform a holder
 hangs from, and nothing about the objects in it; were the cause elsewhere, the objects would still move.
