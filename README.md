@@ -9,6 +9,11 @@ scatter drawn around your craft — the rocks, and around the KSC the grass and 
 > several times, and every rock, tuft of grass or tree comes back drawn a little higher or a little
 > lower against the ground each time — several centimetres apart on Kerbin.
 
+The fix works, and this page measures it. It is still **not worth installing**, and it is not offered to
+KSP Community Fixes: to correct a defect nobody sees, it moves stock objects to another place in the
+scene, where other mods may expect to find them. The reasons are in
+[Should you install it?](#should-you-install-it)
+
 **How this was made.** Written with Claude, Anthropic's AI assistant, and reviewed line by line by a
 human — me. I am saying so up front, because contributions made with an AI deserve a closer look than
 others, and because some people would rather stop reading here. That look is what this page is built
@@ -28,7 +33,8 @@ changes where KSP builds the ground: it moves the terrain quads, not the scatter
 scatter no longer follows the ground it is drawn on: in stock it sometimes comes back exactly on its quad,
 with Terrain Precision Fix never. Nobody sees that either. But a fix that leaves something behind, even
 something invisible, has to answer for it, and this mod is that answer: with both installed, the ground and
-the scatter on it come back at the same place at every load.
+the scatter on it come back at the same place at every load. Whether that answer is worth installing is
+another question, answered no in [Should you install it?](#should-you-install-it)
 
 ### Disclaimer: it is meant to go with Terrain Precision Fix
 
@@ -262,7 +268,7 @@ the holder, so hanging the holder from it would gain nothing.
 Holders on a sphere whose quads are not surface relative are left alone too: there, stock places the
 holder at the centre of the body, not at a long vector.
 
-### Why moving the holder is safe
+### Why moving the holder is safe for stock
 
 Read in the stock code:
 
@@ -279,6 +285,67 @@ Read in the stock code:
 - a holder that cannot be hung from its quad stays where stock placed it;
 - the release only acts on a holder that hangs from its own quad, so it never moves a holder this mod did
   not move.
+
+## Should you install it?
+
+No. The measurements above show that the fix does what it says. They cannot show what it costs the other
+mods installed next to it, and against a defect nobody sees, that cost is not worth taking.
+
+### What the fix changes for other mods
+
+One thing: where a holder hangs. Its pool (`cacheAssigned`, `cacheUnassigned`), its `quad`, its delegates
+and the way it is shown and hidden stay stock. But a holder in use no longer hangs from the
+`Scatter <name>` container under the sphere: it hangs from its quad, under `LocalSpacePQStorage`, outside
+the body's hierarchy. Code that finds holders through the hierarchy sees the difference both ways:
+
+- looking under the sphere, `sphere.GetComponentsInChildren<PQSMod_LandClassScatterQuad>()` no longer
+  finds the holders in use;
+- looking under a quad, it finds children that stock never puts there.
+
+This is not only a hypothesis: [Rock Precision Fix Diag](https://github.com/lhervier/KSP-RockPrecisionFixDiag)
+finds the holders through the hierarchy, and has to search both places to see them with this mod
+installed.
+
+### What has been read
+
+- **Stock** relies on neither. The pool is kept in the lists above, not in the hierarchy. A holder is shown
+  and hidden with `obj.SetActive`, a quad with `meshRenderer.enabled`, so the holder does not inherit
+  anything from the quad's object. When a collision or a raycast hits the ground, stock asks the object hit
+  whether it is a quad (`GetComponent<PQ>()` in `Part`, `ModuleWheelDamage`, `ModuleDeployableSolarPanel`,
+  `ModuleGroundSciencePart`), not its parents.
+- **Kopernicus**, the only mod read here that uses the holders, reaches them through the scatter
+  (`scatterParent`, which this mod reads at every call, and the pool), and reaches the objects of a holder
+  through the holder's own children, which follow it. Its lethal and heat emitting scatter computes world
+  positions from the holder's matrix and positions in the quad's frame, which this fix makes exact. Its
+  optional scatter colliders end up below the quad; stock's `GetComponent<PQ>()` still finds no quad on
+  them, but that is not measured.
+- **Parallax** has its own scatter system, keyed by quad, and does not touch the stock holders.
+- **KSP Community Fixes** does not touch the scatter; `OptimizedModuleRaycasts` asks the object hit whether
+  it is a quad, as stock does.
+- **TUFX** (1.1.1) works on the camera's image, not on the scene: it has no Harmony patch and never looks
+  for a terrain object. Its only walk through the scene lists the objects of the main menu into its debug
+  log.
+
+### What cannot be read
+
+Every other mod: visual mods such as Scatterer or EVE, planet pack plugins, anything that walks the
+terrain's hierarchy. Such a mod would miss the holders where stock puts them, or find unexpected children
+under its quads. Nothing says one does. Nothing says none does, and that can only be checked one mod at a
+time.
+
+### The balance
+
+On one side, a defect nobody sees: stock scatter has no collider, and is sunk into the ground on purpose
+(see [Why the moving scatter matters](#why-the-moving-scatter-matters)). On the other, a change to where
+stock objects hang, which any mod installed along with it may rely on.
+
+And there is no way around that change. As long as a holder hangs under the sphere, a transform in its
+chain holds a vector hundreds of kilometres long (see [Two ways out, one taken](#two-ways-out-one-taken)):
+any fix takes the holder out of the sphere, or draws the scatter without the holder's transform, which
+would change far more.
+
+So this mod stays what it is: the measured answer to what Terrain Precision Fix leaves behind, and the
+proof that the culprit is the right one. Not a mod to install.
 
 ## Performance
 
@@ -300,6 +367,14 @@ comes back at a different height at every load (see
 **Solution.** Install it with Terrain Precision Fix. Measuring it alone takes the same protocol, on the
 same save.
 
+### Mods that look for the holders
+
+**Limit.** A mod that finds scatter holders, or the children of a terrain quad, through the scene
+hierarchy sees them elsewhere than stock puts them. Only stock, Kopernicus, Parallax, KSP Community Fixes
+and TUFX have been read (see [Should you install it?](#should-you-install-it)).
+
+**Solution.** None in this mod: moving the holder is the fix. Do not install it.
+
 ### Surface features with colliders
 
 **Limit.** Breaking Ground's surface features are placed the same way (`PQSMod_ROCScatterQuad.Setup`
@@ -313,11 +388,10 @@ hand it back before `LandClassROC.DestroyQuad`. First measure where the physics 
 ### Not checked yet
 
 - **Kopernicus.** It replaces the stock holder with a subclass that inherits `Setup` without redeclaring
-  it, and releases it through the same `DestroyQuad`, so it should be covered. It also replaces the
-  pool's container at runtime; the mod reads it at every call. Its optional scatter colliders
-  (`scatterColliders`) are children of the holder, so they would follow it under the quad. *Solution:*
-  measure it with Rock Precision Fix Diag (see [TODO.md](TODO.md)).
-- **Parallax.** Its source does not reference the stock scatter holders. *Solution:* check it in game.
+  it, and releases it through the same `DestroyQuad`, so it should be covered. What its code does with
+  the holders is in [What has been read](#what-has-been-read). *Solution:* measure it with Rock Precision
+  Fix Diag (see [TODO.md](TODO.md)).
+- **Parallax.** See [What has been read](#what-has-been-read). *Solution:* check it in game.
 - **Scene switches, the map view, time warp, a rover driven across floating origin shifts, a trip to
   orbit and back**, where quads are built and destroyed, and holders sent through the pool. Only loading a
   save is measured. *Solution:* one record per step with Rock Precision Fix Diag, and the `Trace` log to
@@ -325,6 +399,8 @@ hand it back before `LandClassROC.DestroyQuad`. First measure where the physics 
 - **Performance.** See [Performance](#performance). *Solution:* measure it.
 
 ## Install
+
+Read [Should you install it?](#should-you-install-it) first.
 
 Requires KSP 1.12 and [HarmonyKSP](https://github.com/KSPModdingLibs/HarmonyKSP) (the usual
 `GameData/000_Harmony`, also installed by KSP Community Fixes).
