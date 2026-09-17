@@ -9,10 +9,11 @@ scatter drawn around your craft — the rocks, and around the KSC the grass and 
 > several times, and every rock, tuft of grass or tree comes back drawn a little higher or a little
 > lower against the ground each time — several centimetres apart on Kerbin.
 
-The fix works, and this page measures it. It is still **not worth installing**, and it is not offered to
-KSP Community Fixes: to correct a defect nobody sees, it moves stock objects to another place in the
-scene, where other mods may expect to find them. The reasons are in
-[Should you install it?](#should-you-install-it)
+The fix works, and this page measures it. It is still **not worth installing as a mod of its own**: to
+correct a defect nobody sees, it moves stock objects to another place in the scene, where other mods may
+expect to find them. That move is its main drawback. Were the fix part of KSP Community Fixes, it would
+no longer be a technical risk but a question for modders to settle: whether mods that look for those
+objects should change their code. See [Should you install it?](#should-you-install-it)
 
 **How this was made.** Written with Claude, Anthropic's AI assistant, and reviewed line by line by a
 human — me. I am saying so up front, because contributions made with an AI deserve a closer look than
@@ -34,7 +35,7 @@ scatter no longer follows the ground it is drawn on: in stock it sometimes comes
 with Terrain Precision Fix never. Nobody sees that either. But a fix that leaves something behind, even
 something invisible, has to answer for it, and this mod is that answer: with both installed, the ground and
 the scatter on it come back at the same place at every load. Whether that answer is worth installing is
-another question, answered no in [Should you install it?](#should-you-install-it)
+another question, answered in [Should you install it?](#should-you-install-it)
 
 ### Disclaimer: it is meant to go with Terrain Precision Fix
 
@@ -288,8 +289,9 @@ Read in the stock code:
 
 ## Should you install it?
 
-No. The measurements above show that the fix does what it says. They cannot show what it costs the other
-mods installed next to it, and against a defect nobody sees, that cost is not worth taking.
+Not as a mod of its own. The measurements above show that the fix does what it says. Its main drawback is
+not in what they measure: it moves stock objects, the scatter holders, away from where stock puts them,
+and other mods may look for them there.
 
 ### What the fix changes for other mods
 
@@ -344,8 +346,22 @@ chain holds a vector hundreds of kilometres long (see [Two ways out, one taken](
 any fix takes the holder out of the sphere, or draws the scatter without the holder's transform, which
 would change far more.
 
-So this mod stays what it is: the measured answer to what Terrain Precision Fix leaves behind, and the
-proof that the culprit is the right one. Not a mod to install.
+As a mod of its own, that is not worth it. Nobody installing it would know that the holders moved, and a
+mod tripping over it would fail with nothing to point at this one. So this mod stays what it is: the
+measured answer to what Terrain Precision Fix leaves behind, and the proof that the culprit is the right
+one.
+
+### If it went into KSP Community Fixes
+
+Then the re-parenting stops being a technical risk and becomes a matter of agreement between modders. A
+KSP Community Fixes patch is documented, and can be turned off by a line of its `Settings.cfg`: the move
+would be known, and a player hit by it could undo it without removing anything else.
+
+But it would still be a change that other mods have to follow. A mod that finds holders through the
+hierarchy would have to change its code: search under the terrain quads as well, as Rock Precision Fix
+Diag does, or read the holders from their scatter's pool (`LandClassScatter.cacheAssigned`, a private
+list), which does not depend on where they hang. Whether an invisible defect is worth asking that of other
+modders is not a technical question, and this page does not answer it.
 
 ## Performance
 
@@ -373,7 +389,9 @@ same save.
 hierarchy sees them elsewhere than stock puts them. Only stock, Kopernicus, Parallax, KSP Community Fixes
 and TUFX have been read (see [Should you install it?](#should-you-install-it)).
 
-**Solution.** None in this mod: moving the holder is the fix. Do not install it.
+**Solution.** None in this mod: moving the holder is the fix. Do not install it on its own. In KSP
+Community Fixes, it would be for the mods concerned to adapt (see
+[If it went into KSP Community Fixes](#if-it-went-into-ksp-community-fixes)).
 
 ### Surface features with colliders
 
