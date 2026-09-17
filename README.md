@@ -129,7 +129,7 @@ height above the ground right under them of up to 10 of its vertices, spread ove
 Scatter is sunk into the ground on purpose, so that last height says little by itself: what matters is
 whether it comes back the same at every load.
 
-Every series below uses [the two saves it keeps](https://github.com/lhervier/KSP-RockPrecisionFixDiag/blob/main/perfs/README.md#the-saves), each loaded twelve
+Every series below uses [the two saves it keeps](https://github.com/lhervier/KSP-RockPrecisionFixDiag/blob/main/diag/README.md#the-saves), each loaded twelve
 times, in KSP 1.12.5 with Harmony, ModuleManager and KSP Community Fixes 1.41.1:
 
 - a Mk1 command pod landed on Kerbin, about 8 km north-west of the KSC, where the scatter is grass and
@@ -187,7 +187,7 @@ The ground is fixed, the holders are not, and now all of what moves the objects 
 
 The same install and the same two saves, with this mod added next to Terrain Precision Fix, each save
 loaded twelve times in a single session of KSP, one record taken after each load. The install and the 24
-records are under [perfs](perfs/README.md).
+records are under [diag](diag/README.md).
 
 **Kerbin**
 

@@ -6,7 +6,7 @@ load, copied out of `KSP.log`.
 
 The procedure, the saves and the format of a record belong to that mod:
 [its protocol](https://github.com/lhervier/KSP-RockPrecisionFixDiag/blob/main/README.md#the-protocol),
-[the saves](https://github.com/lhervier/KSP-RockPrecisionFixDiag/blob/main/perfs/README.md#the-saves) and
+[the saves](https://github.com/lhervier/KSP-RockPrecisionFixDiag/blob/main/diag/README.md#the-saves) and
 [the log](https://github.com/lhervier/KSP-RockPrecisionFixDiag/blob/main/README.md#the-log).
 
 ## With Terrain Precision Fix
@@ -52,4 +52,4 @@ nearest quad: its objects and their measured vertices compare one by one from on
 ## The other configurations
 
 Stock and Terrain Precision Fix alone, on the same saves, are kept with
-[Rock Precision Fix Diag](https://github.com/lhervier/KSP-RockPrecisionFixDiag/blob/main/perfs/README.md).
+[Rock Precision Fix Diag](https://github.com/lhervier/KSP-RockPrecisionFixDiag/blob/main/diag/README.md).
