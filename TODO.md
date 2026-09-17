@@ -3,7 +3,7 @@
 ## Test in game
 
 Reloads are measured, with [Terrain Precision Fix](https://github.com/lhervier/KSP-TerrainPrecisionFix)
-installed (see [Results](README.md#results)). Still to run, with
+installed (see [Rock Precision Fix Diag, with this mod](README.md#rock-precision-fix-diag-with-this-mod)). Still to run, with
 [Rock Precision Fix Diag](https://github.com/lhervier/KSP-RockPrecisionFixDiag) and both fixes installed,
 one reading recorded per step:
 
