@@ -1,18 +1,33 @@
 # Rock Precision Fix
 
-**How this was made.** The investigation and the code were done together with Claude, Anthropic's AI
-assistant: measurement campaigns in game, and reading the decompiled stock code to find where the
-scatter loses its ground. I am saying so before anything else, because contributions made with an AI
-deserve a closer look than others, and because some people would rather stop reading here. That look is
-what this page is built for: every figure on it comes from an in-game measurement, the instrument behind
-them is public and runs on a stock install, the stock code quoted here is a handful of lines anyone can
-check in a decompiler, and the fix fits in one file you can read in a few minutes.
+A fix for stock KSP 1.12, for the terrain scatter drawn around your craft — the rocks, and around the
+KSC the grass and the trees:
 
-A fix for stock KSP 1.12: terrain scatter (rocks, grass, trees) is drawn a few centimetres above or
-below the ground it was built on, by an amount that changes at every load. With this mod, the scatter of
-each terrain quad is drawn with the same matrix as the ground of that quad.
+> **KSP never draws terrain scatter at the same height against the ground twice.** Load the same save
+> several times, and every rock, tuft of grass or tree comes back drawn a little higher or a little
+> lower against the ground each time — several centimetres apart on Kerbin.
 
-Two Harmony patches, in one source file.
+With this mod, the scatter of each terrain quad is drawn with the same matrix as the ground of that
+quad. Two Harmony patches, in one source file.
+
+**How this was made.** Written with Claude, Anthropic's AI assistant, and reviewed line by line by a
+human — me. I am saying so up front, because contributions made with an AI deserve a closer look than
+others, and because some people would rather stop reading here. That look is what this page is built
+for: every figure on it comes from an in-game measurement, the instrument behind them is public and runs
+on a stock install, the stock code quoted here is a handful of lines anyone can check, and the fix fits
+in one file you can read in a few minutes.
+
+## Why it matters
+
+It barely does. Stock scatter has no collider: nothing rests on it and nothing hits it, so a rock drawn a
+few centimetres higher or lower than at the last load changes nothing for your craft. Scatter is also
+sunk partly into the ground on purpose, so the shift is hard to see, and most of the time you will not
+see it at all.
+
+This fix exists for another reason. [Terrain Precision Fix](https://github.com/lhervier/KSP-TerrainPrecisionFix)
+changes the height at which KSP builds the ground: it moves the quads, not the scatter drawn on them, and
+the scatter ends up even further from the ground than in stock (see [Compatibility](#compatibility)).
+This mod keeps the scatter on its ground, with or without Terrain Precision Fix.
 
 ## The problem
 
@@ -22,9 +37,9 @@ object's lowest point above the ground right under it (the terrain collision sur
 cast). Scatter objects are partly sunk into the ground by construction, so the value itself says
 little; what matters is whether it stays the same from one load to the next.
 
-It does not. Kerbin, next to the KSC, the same save loaded six times, on the same quad each time
-(218 objects: around the KSC, the scatter is grass and trees). Measured with an earlier version of that
-mod, whose columns the rows are named after:
+It does not. Kerbin, next to the KSC, the same save loaded six times, on the same quad each time,
+`Kerbin Zn3010000130` (218 objects: around the KSC, the scatter is grass and trees, 200 `Grass00` and
+18 `Tree00`). Measured with an earlier version of that mod, whose columns the rows are named after:
 
 | load | 1 | 2 | 3 | 4 | 5 | 6 |
 |---|---|---|---|---|---|---|
@@ -33,14 +48,19 @@ mod, whose columns the rows are named after:
 | **Rocks − Matrix** (mm) | −324.378 | −324.335 | −324.505 | −325.332 | −324.799 | −323.870 |
 
 The objects move by 106 mm against the ground from one load to the next. Take off the **Matrix** term,
-explained below, and what is left is constant to 1.5 mm: nothing else moves them.
+explained below, and what is left is constant to 1.5 mm on average. Object by object, the median range
+over the loads is 106 mm, and 3.9 mm once **Matrix** is taken off. An earlier series of six loads on the
+same quad gave a 119 mm range.
+
+About fifty of the 218 objects, those whose lowest point is 0.5 to 1.8 m away from the ground, keep a
+residue of a few centimetres from one load to the next once **Matrix** is taken off. It is not explained.
 
 Over all 118 scatter holders of the 64 quads around the craft, on those six loads, the **Matrix** term
 ranges from −85.5 to +64.7 mm, with a standard deviation of 29.7 mm. It changes from one holder to the
-next and from one load to the next.
+next and from one load to the next, and is made of whole single precision steps along the world axes,
+projected on the vertical. For the quads, the same measurement is 0.000 mm everywhere.
 
-Stock scatter has no collider: this is visual only. Measured on stock KSP with Harmony and
-ModuleManager, without any fix installed.
+Measured on stock KSP with Harmony and ModuleManager, without any fix installed.
 
 ## Why it happens
 
@@ -73,8 +93,8 @@ transform position: it is off by combinations of whole float steps (62.5 mm at 6
 are drawn that much above or below the ground.
 
 The transform positions themselves agree: over six other loads of the same save, the holder and the
-quad had the same `transform.position` to 0.000 mm on all 64 quads. The **Matrix** row above is the
-whole difference.
+quad had the same `transform.position` to 0.000 mm on all 64 quads, and on Gilly, in one reading over 128
+quads carrying scatter, to the bit. The **Matrix** row above is the whole difference.
 
 ## What the fix does
 
