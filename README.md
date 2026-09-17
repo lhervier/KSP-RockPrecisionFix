@@ -23,7 +23,8 @@ cast). Scatter objects are partly sunk into the ground by construction, so the v
 little; what matters is whether it stays the same from one load to the next.
 
 It does not. Kerbin, next to the KSC, the same save loaded six times, on the same quad each time
-(218 objects: around the KSC, the scatter is grass and trees):
+(218 objects: around the KSC, the scatter is grass and trees). Measured with an earlier version of that
+mod, whose columns the rows are named after:
 
 | load | 1 | 2 | 3 | 4 | 5 | 6 |
 |---|---|---|---|---|---|---|
@@ -109,8 +110,8 @@ Not measured yet.
 
 To measure it: [Rock Precision Fix Diag](https://github.com/lhervier/KSP-RockPrecisionFixDiag), with
 this mod installed, the same save loaded several times, one reading recorded per load. Expected, from the
-code: every holder hanging under its own quad, and **Rocks** the same on every load, as steady as
-**Rocks − Matrix** was in stock.
+code: every holder hanging under its own quad, and under each holder the height of its objects above the
+ground the same on every load, as steady as **Rocks − Matrix** was in stock.
 
 ## Compatibility
 
