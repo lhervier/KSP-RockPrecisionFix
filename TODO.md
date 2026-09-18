@@ -3,10 +3,8 @@
 ## Test in game
 
 To run, with [Rock Precision Fix Diag](https://github.com/lhervier/KSP-RockPrecisionFixDiag) and
-both fixes installed, a holder record (`Alt+Shift+F6`) before and after each step, and the same steps
-with Terrain Precision Fix alone to compare:
+both fixes installed, and the same steps with Terrain Precision Fix alone to compare:
 
-- **Time warp** on the ground, then back to normal speed.
 - **The rocks through floating origin shifts**: rock records (`Alt+F6`) during the flight 5 km over the
   Mun, where the origin shifts every few tens of seconds. The rocks should stay on the ground, since the
   holder now follows the quad through `PQ.FastUpdateSubQuadsPosition` and
