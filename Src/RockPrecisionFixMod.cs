@@ -170,7 +170,7 @@ namespace com.github.lhervier.ksp.rockprecisionfix
 
         /// <summary>
         /// Hangs a holder that <see cref="HangFromQuad"/> moved back from the container of its scatter's pool,
-        /// at the identity, as stock places an unused holder. Does nothing to any other holder.
+        /// at the identity. Does nothing to any other holder.
         /// </summary>
         private static void ReturnToPool(PQSLandControl.LandClassScatter scatter, PQSMod_LandClassScatterQuad holder)
         {
@@ -205,6 +205,8 @@ namespace com.github.lhervier.ksp.rockprecisionfix
                     }
                 }
 
+                // The identity is where stock places a holder it has never used. A holder stock hands back keeps
+                // the offset of its last quad instead; either way, the next Setup gives it a new one.
                 Transform holderTransform = holder.transform;
                 holderTransform.SetParent(back, false);
                 holderTransform.localPosition = Vector3.zero;
