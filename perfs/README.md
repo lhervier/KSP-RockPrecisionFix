@@ -1,7 +1,7 @@
 # What this fix costs: the runs
 
 The logs this mod's performance figures are read from. What they say is in
-[Performance](../README.md#performance) on the main page.
+[Performance](../docs/performance.md).
 
 Measured with [PQS Bench](https://github.com/lhervier/KSP-PQSBench) in its `counters` mode, **whose page
 carries the procedure** — the save, the orbit, how long to fly, and what makes a run worth keeping. Its

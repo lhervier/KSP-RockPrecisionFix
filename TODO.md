@@ -3,7 +3,7 @@
 ## Test in game
 
 Reloads are measured, with [Terrain Precision Fix](https://github.com/lhervier/KSP-TerrainPrecisionFix)
-installed (see [Rock Precision Fix Diag, with this mod](README.md#rock-precision-fix-diag-with-this-mod)). Still to run, with
+installed (see [Rock Precision Fix Diag, with this mod](docs/checking-the-culprit.md#rock-precision-fix-diag-with-this-mod)). Still to run, with
 [Rock Precision Fix Diag](https://github.com/lhervier/KSP-RockPrecisionFixDiag) and both fixes installed,
 one reading recorded per step:
 
@@ -17,8 +17,10 @@ one reading recorded per step:
 - **To orbit and back down**: the quads that carry scatter should be destroyed on the way up and built
   again on the way down, sending their holders through the pool.
 
-Check `KSP.log` at the `Trace` level for errors, and that as many holders go back to their pool as are
-hung from a quad.
+Run with `logLevel = Debug`: the mod then logs an `audit` line at each scene load, time warp change and
+map view exit. Expected at every one: no `stray` holder (none left under a quad that is not its own, or
+under a quad gone back to the PQS cache), and a difference between holders hung and handed back since
+startup equal to the number hung right now. Check `KSP.log` for errors.
 
 ## Breaking Ground surface features (ROC)
 
