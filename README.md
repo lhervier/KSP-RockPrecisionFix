@@ -233,16 +233,6 @@ place, on ground that is in the same place.
 
 ## The fix this mod proposes
 
-### Two ways out, one taken
-
-**Placing the holder more precisely** where it hangs does not help: as long as a transform in its chain
-holds a vector hundreds of kilometres long, Unity rounds it in steps of 62.5 mm on Kerbin. Taking the
-holder out of the sphere and placing it in double precision could work, but it would then have to be
-moved at every floating origin shift, and placed again whenever stock places its quad again: the very work
-stock already does for the quad.
-
-**Hanging the holder from its quad** gets all of that for free, and that is what this mod does.
-
 ### Hanging each holder from its quad
 
 Each holder hangs from its own quad, at no offset. The objects are then drawn in the frame they were
@@ -335,6 +325,36 @@ terrain's hierarchy. Such a mod would miss the holders where stock puts them, or
 under its quads. Nothing says one does. Nothing says none does, and that can only be checked one mod at a
 time.
 
+### Why the holder has to move at all
+
+The fix that would leave every other mod alone is the one that keeps the holder under its `Scatter <name>`
+container and merely places it better. Reading the stock code, and the way Unity stores a transform, that
+way looks closed. Three reasons, from the plainest to the heaviest:
+
+- **The correction is smaller than the step of the number that would carry it.** Unity keeps a child's
+  position in its parent's frame, in single precision, whichever call writes it: `position`,
+  `localPosition` and `SetPositionAndRotation` all end in that same float. Under the sphere, that number is
+  the 600 km vector, where a float changes in steps of 62.5 mm on Kerbin, while the offsets to be taken out
+  are the ones measured above, up to 110 mm. No value that can be written puts the holder where it belongs.
+- **The frame it hangs in is single precision as well.** Even given a perfect local position, the holder is
+  drawn through the sphere's matrix, over that same 600 km. That product is what rounds differently at
+  every load: it is the defect itself, not a way around it.
+- **Out of the sphere, the holder has to be placed by hand before every frame.** Placing it in double
+  precision needs a parent near the world origin, and stock then stops carrying it: the world position of a
+  quad of the highest level is rewritten whenever the body moves in the game's local space, which in flight
+  is every frame, and its rotation whenever stock places the quad again. The holder would have to follow
+  both — its objects are built in the quad's frame, so its rotation counts as much as its position — and a
+  frame missed would leave them not centimetres but metres behind the ground.
+
+**This is read, not measured.** No build of this mod has tried that way, and nothing else on this page rests
+on it: the measurements above stand on their own. It is written down because it is the first question to ask
+of a fix that moves stock objects, and a reader who sees a way through should say so.
+
+What is left is to take the holder out of the sphere, as this mod does, or to stop drawing the scatter from
+the holder's transform altogether and draw it from somewhere else, which changes far more than where an
+object hangs. Of the two, hanging the holder from its quad is the smaller change: the quad is the one object
+stock already keeps in step, for nothing, with the ground the scatter is built from.
+
 ### The balance
 
 On one side, a defect nobody sees: stock scatter has no collider, and is sunk into the ground on purpose
@@ -342,10 +362,8 @@ On one side, a defect nobody sees: stock scatter has no collider, and is sunk in
 stock objects hang, which any mod installed along with it may rely on. Its cost weighs on neither side:
 none shows in the measurement (see [Performance](#performance)).
 
-And there is no way around that change. As long as a holder hangs under the sphere, a transform in its
-chain holds a vector hundreds of kilometres long (see [Two ways out, one taken](#two-ways-out-one-taken)):
-any fix takes the holder out of the sphere, or draws the scatter without the holder's transform, which
-would change far more.
+And it is not a change that can be traded away: nothing above leaves a fix that keeps the holders where
+stock puts them.
 
 As a mod of its own, that is not worth it. Nobody installing it would know that the holders moved, and a
 mod tripping over it would fail with nothing to point at this one. So this mod stays what it is: the
