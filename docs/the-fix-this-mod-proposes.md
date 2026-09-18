@@ -13,7 +13,7 @@ vector any more.
   through everything stock does to it, floating origin shifts (`PQ.FastUpdateSubQuadsPosition`) and
   re-placements (`PQ.PreciseUpdateSubQuadsPosition`) included, with nothing more to do.
 - **Before `PQSLandControl.LandClassScatter.DestroyQuad`**, which returns a holder to its pool when its
-  quad is destroyed: the holder goes back under the pool's container, as stock placed it, before the
+  quad is destroyed: the holder goes back under the pool's container, where stock keeps its free holders, before the
   quad itself goes back to the PQS cache to be reused elsewhere. A prefix, because the stock method
   starts by clearing the holder's quad.
 
@@ -33,7 +33,8 @@ holder at the centre of the body, not at a long vector.
 Read in the stock code:
 
 - a destroyed quad calls its `onDestroy` delegates, which release its holder, before it goes to the PQS
-  cache, so no holder travels with a recycled quad;
+  cache, so no holder travels with a recycled quad. Measured as well, over a whole flight: see
+  [the holder pools over a flight](checking-the-culprit.md#rock-precision-fix-diag-the-holder-pools-over-a-flight);
 - `PQS.ResetSphere` destroys the quads before the scatter destroys its holders;
 - the visibility of a holder is switched with `obj.SetActive` from the quad's `onVisible` and
   `onInvisible` delegates, not through the hierarchy, so hanging it from the quad does not change when it

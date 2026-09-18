@@ -2,25 +2,26 @@
 
 ## Test in game
 
-Reloads are measured, with [Terrain Precision Fix](https://github.com/lhervier/KSP-TerrainPrecisionFix)
-installed (see [Rock Precision Fix Diag, with this mod](docs/checking-the-culprit.md#rock-precision-fix-diag-with-this-mod)). Still to run, with
-[Rock Precision Fix Diag](https://github.com/lhervier/KSP-RockPrecisionFixDiag) and both fixes installed,
-one reading recorded per step:
+Measured, with [Terrain Precision Fix](https://github.com/lhervier/KSP-TerrainPrecisionFix) installed:
 
-- **Scene switches**: to the Space Center and back, to the Tracking Station and back. No holder should
-  be left under a quad that went back to the PQS cache.
+- **Reloads** (see [Rock Precision Fix Diag, with this mod](docs/checking-the-culprit.md#rock-precision-fix-diag-with-this-mod)).
+- **The holder pools over a flight** 5 km over the Mun, down to the crash: every holder goes back to its
+  pool, none is lost (see [the holder pools, over a flight](diag/README.md#the-holder-pools-over-a-flight)).
+
+Still to run, with [Rock Precision Fix Diag](https://github.com/lhervier/KSP-RockPrecisionFixDiag) and
+both fixes installed, a holder record (`Alt+Shift+F6`) before and after each step, and the same steps
+with Terrain Precision Fix alone to compare:
+
+- **Scene switches**, from `reference-mune.sfs`: to the Space Center, where the Mun's pools are read
+  after its terrain was switched off, and back through the Tracking Station.
 - **Map view** and back, where the terrain keeps being built and destroyed.
-- **A rover driven across several floating origin shifts**: the scatter should stay on the ground the
-  whole way, since the holder now follows the quad through `PQ.FastUpdateSubQuadsPosition` and
-  `PQ.PreciseUpdateSubQuadsPosition`.
 - **Time warp** on the ground, then back to normal speed.
-- **To orbit and back down**: the quads that carry scatter should be destroyed on the way up and built
-  again on the way down, sending their holders through the pool.
+- **The rocks through floating origin shifts**: rock records (`Alt+F6`) during the flight 5 km over the
+  Mun, where the origin shifts every few tens of seconds. The rocks should stay on the ground, since the
+  holder now follows the quad through `PQ.FastUpdateSubQuadsPosition` and
+  `PQ.PreciseUpdateSubQuadsPosition`.
 
-Run with `logLevel = Debug`: the mod then logs an `audit` line at each scene load, time warp change and
-map view exit. Expected at every one: no `stray` holder (none left under a quad that is not its own, or
-under a quad gone back to the PQS cache), and a difference between holders hung and handed back since
-startup equal to the number hung right now. Check `KSP.log` for errors.
+Check `KSP.log` for errors.
 
 ## Breaking Ground surface features (ROC)
 

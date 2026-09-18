@@ -26,7 +26,7 @@ scatterPos += scatterUp * verticalOffset;
 
 That line needs no patch, and this is measured, not only read. An object sunk or turned along a vertical
 that changed from one load to the next would come back leaning another way, its vertices higher or lower
-against each other. On every series of [Rock Precision Fix Diag](https://github.com/lhervier/KSP-RockPrecisionFixDiag/blob/main/README.md#what-the-readings-show),
+against each other. On every series of [Rock Precision Fix Diag](https://github.com/lhervier/KSP-RockPrecisionFixDiag/blob/main/docs/what-the-readings-show.md#the-rocks),
 on Kerbin and on the Mun, on stock and with Terrain Precision Fix, the heights of the measured vertices of
 each object against each other come back the same at every load to within 0.07 mm, trees 20 m tall
 included.

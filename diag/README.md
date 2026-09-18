@@ -1,13 +1,14 @@
 # Measurement runs
 
 Readings of [Rock Precision Fix Diag](https://github.com/lhervier/KSP-RockPrecisionFixDiag) with this
-mod installed, kept as they were logged: one file per load, each holding the last record taken after that
-load, copied out of `KSP.log`.
+mod installed, kept as they were logged, copied out of `KSP.log`: for the rocks, one file per load, each
+holding the last record taken after that load; for the holder pools, one file per flight, holding every
+record taken during it.
 
 The procedure, the saves and the format of a record belong to that mod:
-[its protocol](https://github.com/lhervier/KSP-RockPrecisionFixDiag/blob/main/README.md#the-protocol),
+[its protocol](https://github.com/lhervier/KSP-RockPrecisionFixDiag/blob/main/docs/measuring-the-rocks.md#the-protocol),
 [the saves](https://github.com/lhervier/KSP-RockPrecisionFixDiag/blob/main/diag/README.md#the-saves) and
-[the log](https://github.com/lhervier/KSP-RockPrecisionFixDiag/blob/main/README.md#the-log).
+[the log](https://github.com/lhervier/KSP-RockPrecisionFixDiag/blob/main/docs/measuring-the-rocks.md#the-log).
 
 ## With Terrain Precision Fix
 
@@ -48,6 +49,43 @@ End of record 13: 128 quads with rocks, 128 holders (0 not built yet); nearest q
 
 So every record was taken once all the holders were built, and all the records of a body name the same
 nearest quad: its objects and their measured vertices compare one by one from one load to the next.
+
+## The holder pools, over a flight
+
+This mod takes each holder out of the pool's container while its quad is in use, and hangs it back there
+when the quad is handed back. This series checks that every holder does go back, and that none is lost on
+the way.
+
+The same install as above, with a later build of Rock Precision Fix Diag: the first one
+with the holder record. `ref-mune-5km.sfs` loaded once, then `Alt+Shift+F6` pressed 30 s into the flight,
+again about every two minutes, and once more after the pod crashed, following
+[its protocol](https://github.com/lhervier/KSP-RockPrecisionFixDiag/blob/main/docs/checking-the-holder-pools.md#the-protocol).
+
+Both fixes wrote to `KSP.log` that they had acted on the Mun before the first record:
+
+```
+[TerrainPrecisionFix] Mun: terrain placed in double precision (first quad corrected by 14.82 mm)
+[RockPrecisionFix] Mun: scatter drawn from its terrain quads (first holder was -1.34 mm off)
+```
+
+| flight | records |
+|---|---|
+| with both fixes | [`mun-5km-both-holders.log`](runs/mun-5km-both-holders.log) |
+
+The file holds the six records and the line of `KSP.log` reporting the crash, between the fifth and the
+sixth. Every record ends on `0 broken rules`:
+
+| record | holders in use | free | broken rules |
+|---|---|---|---|
+| 1 | 344 | 40 | 0 |
+| 2 | 168 | 216 | 0 |
+| 3 | 144 | 240 | 0 |
+| 4 | 224 | 160 | 0 |
+| 5 | 152 | 232 | 0 |
+| 6, after the crash | 568 | 40 | 0 |
+
+Those counts are, record for record, those of the flight with Terrain Precision Fix alone: the flight
+takes as many holders out of the pool, at the same moments, with this mod as without it.
 
 ## The other configurations
 

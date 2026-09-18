@@ -58,7 +58,8 @@ higher or lower against the ground each time.
 [Rock Precision Fix Diag](https://github.com/lhervier/KSP-RockPrecisionFixDiag) loads the same save twelve
 times on Kerbin and on the Mun. With Terrain Precision Fix alone, the ground stops moving but the scatter
 does not: half of the measured vertices come back 130 mm apart on Kerbin. With both fixes, every holder is
-drawn exactly on its quad, and no vertex moves by more than 0.125 mm.
+drawn exactly on its quad, and no vertex moves by more than 0.125 mm. Over a whole flight low over the Mun,
+every holder goes back to its pool.
 
 **→ Full chapter: [Checking the culprit](docs/checking-the-culprit.md)**
 
@@ -87,7 +88,8 @@ no cost shows. The difference is smaller than between two runs of the same confi
 ## Limits and solutions
 
 Not measured without Terrain Precision Fix; mods that look for the holders; Breaking Ground's surface
-features, placed the same way, not handled yet; and everything but loading a save, not checked yet.
+features, placed the same way, not handled yet; and scene switches, the map view and time warp, not
+checked yet (loading a save and a whole flight are).
 
 **→ Full chapter: [Limits and solutions](docs/limits-and-solutions.md)**
 

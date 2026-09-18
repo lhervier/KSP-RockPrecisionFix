@@ -41,8 +41,9 @@ hand it back before `LandClassROC.DestroyQuad`. First measure where the physics 
   the holders is in [What has been read](should-you-install-it.md#what-has-been-read). *Solution:* measure it with Rock Precision
   Fix Diag (see [TODO.md](../TODO.md)).
 - **Parallax.** See [What has been read](should-you-install-it.md#what-has-been-read). *Solution:* check it in game.
-- **Scene switches, the map view, time warp, a rover driven across floating origin shifts, a trip to
-  orbit and back**, where quads are built and destroyed, and holders sent through the pool. Only loading a
-  save is measured. *Solution:* one record per step with Rock Precision Fix Diag, and the `Trace` log to
-  check that as many holders go back to their pool as are hung from a quad (see [TODO.md](../TODO.md)).
+- **Scene switches, the map view, time warp**, and the rocks through floating origin shifts. Measured:
+  loading a save, and a flight low over the Mun down to the crash, where every holder went back to its
+  pool and none was lost (see [the holder pools, over a flight](../diag/README.md#the-holder-pools-over-a-flight)).
+  *Solution:* a holder record before and after each step with Rock Precision Fix Diag, and rock records
+  during the flight (see [TODO.md](../TODO.md)).
 

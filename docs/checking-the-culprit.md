@@ -4,12 +4,17 @@ Part of [Rock Precision Fix](../README.md): the measurements that check [the cul
 
 Before anything is changed, [Rock Precision Fix Diag](https://github.com/lhervier/KSP-RockPrecisionFixDiag)
 measures what stock does. Its page carries its method and
-[its protocol](https://github.com/lhervier/KSP-RockPrecisionFixDiag/blob/main/README.md#the-protocol).
+[its protocol](https://github.com/lhervier/KSP-RockPrecisionFixDiag/blob/main/docs/measuring-the-rocks.md#the-protocol).
 For every quad carrying scatter around a landed craft, it reads the height of the quad, of each of its
 holders, and of the matrices they are drawn with; for every object of the quad nearest to the craft, the
 height above the ground right under them of up to 10 of its vertices, spread over the whole object.
 Scatter is sunk into the ground on purpose, so that last height says little by itself: what matters is
 whether it comes back the same at every load.
+
+A second reading of the instrument,
+[the holder pools](https://github.com/lhervier/KSP-RockPrecisionFixDiag/blob/main/docs/checking-the-holder-pools.md),
+checks something else, over a flight: that every holder taken out of its pool for a quad goes back to it
+when the quad is destroyed. It is at the end of this page.
 
 Every series below uses [the two saves it keeps](https://github.com/lhervier/KSP-RockPrecisionFixDiag/blob/main/diag/README.md#the-saves), each loaded twelve
 times, in KSP 1.12.5 with Harmony, ModuleManager and KSP Community Fixes 1.41.1:
@@ -26,7 +31,7 @@ The *range* of a reading is its largest value minus its smallest over the twelve
 ## Rock Precision Fix Diag, on stock
 
 The stock series and the one with Terrain Precision Fix alone are kept, with their logs, on
-[the instrument's page](https://github.com/lhervier/KSP-RockPrecisionFixDiag/blob/main/README.md#what-the-readings-show).
+[the instrument's page](https://github.com/lhervier/KSP-RockPrecisionFixDiag/blob/main/docs/what-the-readings-show.md#the-rocks).
 On stock:
 
 - the centre of each holder stands at the height of its quad's centre, to the micrometre;
@@ -112,3 +117,40 @@ hangs from, and nothing about the objects in it; were the cause elsewhere, the o
 
 In other words: reload the same save as many times as you like, and the scatter comes back at the same
 place, on ground that is in the same place.
+
+## Rock Precision Fix Diag, the holder pools over a flight
+
+Hanging a holder from its quad takes it out of the container where stock keeps the holders of a pool, and
+[the fix](the-fix-this-mod-proposes.md) hangs it back there when the quad is destroyed. A holder missed on
+the way would be left on a quad that stock sends back to its cache of quads, to be reused elsewhere; nothing
+would show on screen.
+
+The instrument's holder record reads every pool of holders through stock's own bookkeeping, and counts the
+holders that break a rule stock keeps: a holder in use that no longer exists or stands on a quad that is
+not active, a free holder that does not hang from its pool's container or still has a quad, a count that
+disagrees with its list, a holder in no pool. It is taken during a flight, where the terrain keeps building
+quads ahead of the craft and destroying those behind it: the save
+[`ref-mune-5km.sfs`](https://github.com/lhervier/KSP-RockPrecisionFixDiag/blob/main/diag/README.md#the-saves),
+a Mk1 command pod in a circular equatorial orbit 5 km over the Mun, loaded once, one record 30 s into the
+flight, then about every two minutes, and one after the pod crashed into the relief. The same install as
+above, once with Terrain Precision Fix alone and once with both fixes. The records are under
+[diag](../diag/README.md#the-holder-pools-over-a-flight), and those with Terrain Precision Fix alone with
+[the instrument](https://github.com/lhervier/KSP-RockPrecisionFixDiag/blob/main/diag/README.md#the-holder-pools-over-a-flight).
+
+| record | holders in use | free | broken rules, Terrain Precision Fix alone | broken rules, both fixes |
+|---|---|---|---|---|
+| 1 | 344 | 40 | 0 | 0 |
+| 2 | 168 | 216 | 0 | 0 |
+| 3 | 144 | 240 | 0 | 0 |
+| 4 | 224 | 160 | 0 | 0 |
+| 5 | 152 | 232 | 0 | 0 |
+| 6, after the crash | 568 | 40 | 0 | 0 |
+
+**No holder is lost.** With both fixes, every holder handed back hangs in its pool's container, without a
+quad, and every holder in use stands on a live quad of the Mun, at every record, the one after the crash
+included.
+
+**The pool works as in stock.** The counts of holders in use and free are the same, record for record, in
+both flights: the flight takes as many holders out of the pool, at the same moments, with this mod as
+without it. The pool of the Mun's `Rock00` grows from 384 holders to 608 after the crash, as stock makes
+new ones when it has none free left, and those go through the fix as well.
