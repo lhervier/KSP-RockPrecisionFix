@@ -7,13 +7,13 @@ Measured, with [Terrain Precision Fix](https://github.com/lhervier/KSP-TerrainPr
 - **Reloads** (see [Rock Precision Fix Diag, with this mod](docs/checking-the-culprit.md#rock-precision-fix-diag-with-this-mod)).
 - **The holder pools over a flight** 5 km over the Mun, down to the crash: every holder goes back to its
   pool, none is lost (see [the holder pools, over a flight](diag/README.md#the-holder-pools-over-a-flight)).
+- **Scene switches**, from the Mun to the Space Center, then to Kerbin: the Mun's holders are gone with
+  its terrain, none left on a quad of Kerbin (see [the holder pools, across scene switches](diag/README.md#the-holder-pools-across-scene-switches)).
 
 Still to run, with [Rock Precision Fix Diag](https://github.com/lhervier/KSP-RockPrecisionFixDiag) and
 both fixes installed, a holder record (`Alt+Shift+F6`) before and after each step, and the same steps
 with Terrain Precision Fix alone to compare:
 
-- **Scene switches**, from `reference-mune.sfs`: to the Space Center, where the Mun's pools are read
-  after its terrain was switched off, and back through the Tracking Station.
 - **Map view** and back, where the terrain keeps being built and destroyed.
 - **Time warp** on the ground, then back to normal speed.
 - **The rocks through floating origin shifts**: rock records (`Alt+F6`) during the flight 5 km over the

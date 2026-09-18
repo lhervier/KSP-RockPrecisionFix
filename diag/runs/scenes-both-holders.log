@@ -1,0 +1,27 @@
+[LOG 17:59:54.860] [TerrainPrecisionFix] Kerbin: terrain placed in double precision (first quad corrected by 16.50 mm)
+[LOG 17:59:59.728] [ApplicationLauncher] OnSceneLoadedGUIReady: scene MAINMENU ShouldBeVisible() True ShouldBeOnTop() True iIsPositionedAtTop True
+[LOG 18:00:18.449] [RockPrecisionFix] Kerbin: scatter drawn from its terrain quads (first holder was -27.51 mm off)
+[LOG 18:00:19.644] [ApplicationLauncher] OnSceneLoadedGUIReady: scene SPACECENTER ShouldBeVisible() True ShouldBeOnTop() False iIsPositionedAtTop True
+[LOG 18:00:24.341] [TerrainPrecisionFix] Mun: terrain placed in double precision (first quad corrected by 1.68 mm)
+[LOG 18:00:24.704] [RockPrecisionFix] Mun: scatter drawn from its terrain quads (first holder was -0.40 mm off)
+[LOG 18:00:25.906] [ApplicationLauncher] OnSceneLoadedGUIReady: scene FLIGHT ShouldBeVisible() True ShouldBeOnTop() True iIsPositionedAtTop False
+[LOG 18:00:31.018] [RockPrecisionFixDiag] Holder record 1: every pool of holders of rocks, one per body and kind of scatter
+[RockPrecisionFixDiag]   Mun 'Rock00': in use 128 (counter 128): 0 destroyed, 0 without a quad, 0 on an inactive quad, 0 on a quad of another body; free 32 (counter 32): 0 destroyed, 0 outside the pool's container, 0 still with a quad; 0 both in use and free
+[RockPrecisionFixDiag] End of holder record 1: 1 pools, 128 holders in use, 32 free, 0 in no pool; 0 broken rules
+[LOG 18:00:34.356] [ApplicationLauncher] OnSceneLoadedGUIReady: scene SPACECENTER ShouldBeVisible() True ShouldBeOnTop() False iIsPositionedAtTop True
+[LOG 18:00:40.220] [RockPrecisionFixDiag] Holder record 2: every pool of holders of rocks, one per body and kind of scatter
+[RockPrecisionFixDiag]   Kerbin 'Tree00': in use 1 (counter 1): 0 destroyed, 0 without a quad, 0 on an inactive quad, 0 on a quad of another body; free 63 (counter 63): 0 destroyed, 0 outside the pool's container, 0 still with a quad; 0 both in use and free
+[RockPrecisionFixDiag]   Kerbin 'Grass00': in use 2 (counter 2): 0 destroyed, 0 without a quad, 0 on an inactive quad, 0 on a quad of another body; free 62 (counter 62): 0 destroyed, 0 outside the pool's container, 0 still with a quad; 0 both in use and free
+[RockPrecisionFixDiag]   Kerbin 'boulder': in use 1 (counter 1): 0 destroyed, 0 without a quad, 0 on an inactive quad, 0 on a quad of another body; free 63 (counter 63): 0 destroyed, 0 outside the pool's container, 0 still with a quad; 0 both in use and free
+[RockPrecisionFixDiag]   Kerbin 'Pine00': in use 0 (counter 0): 0 destroyed, 0 without a quad, 0 on an inactive quad, 0 on a quad of another body; free 64 (counter 64): 0 destroyed, 0 outside the pool's container, 0 still with a quad; 0 both in use and free
+[RockPrecisionFixDiag]   Kerbin 'cactus': in use 0 (counter 0): 0 destroyed, 0 without a quad, 0 on an inactive quad, 0 on a quad of another body; free 64 (counter 64): 0 destroyed, 0 outside the pool's container, 0 still with a quad; 0 both in use and free
+[RockPrecisionFixDiag] End of holder record 2: 5 pools, 4 holders in use, 316 free, 0 in no pool; 0 broken rules
+[LOG 18:00:46.911] [ApplicationLauncher] OnSceneLoadedGUIReady: scene FLIGHT ShouldBeVisible() True ShouldBeOnTop() True iIsPositionedAtTop False
+[LOG 18:00:51.876] [RockPrecisionFixDiag] Holder record 3: every pool of holders of rocks, one per body and kind of scatter
+[RockPrecisionFixDiag]   Kerbin 'Tree00': in use 54 (counter 54): 0 destroyed, 0 without a quad, 0 on an inactive quad, 0 on a quad of another body; free 10 (counter 10): 0 destroyed, 0 outside the pool's container, 0 still with a quad; 0 both in use and free
+[RockPrecisionFixDiag]   Kerbin 'Grass00': in use 60 (counter 60): 0 destroyed, 0 without a quad, 0 on an inactive quad, 0 on a quad of another body; free 4 (counter 4): 0 destroyed, 0 outside the pool's container, 0 still with a quad; 0 both in use and free
+[RockPrecisionFixDiag]   Kerbin 'boulder': in use 4 (counter 4): 0 destroyed, 0 without a quad, 0 on an inactive quad, 0 on a quad of another body; free 60 (counter 60): 0 destroyed, 0 outside the pool's container, 0 still with a quad; 0 both in use and free
+[RockPrecisionFixDiag]   Kerbin 'Pine00': in use 0 (counter 0): 0 destroyed, 0 without a quad, 0 on an inactive quad, 0 on a quad of another body; free 64 (counter 64): 0 destroyed, 0 outside the pool's container, 0 still with a quad; 0 both in use and free
+[RockPrecisionFixDiag]   Kerbin 'cactus': in use 0 (counter 0): 0 destroyed, 0 without a quad, 0 on an inactive quad, 0 on a quad of another body; free 64 (counter 64): 0 destroyed, 0 outside the pool's container, 0 still with a quad; 0 both in use and free
+[RockPrecisionFixDiag] End of holder record 3: 5 pools, 118 holders in use, 202 free, 0 in no pool; 0 broken rules
+[LOG 18:00:54.791] [ApplicationLauncher] OnSceneLoadedGUIReady: scene MAINMENU ShouldBeVisible() True ShouldBeOnTop() True iIsPositionedAtTop True

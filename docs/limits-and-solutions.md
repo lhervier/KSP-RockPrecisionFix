@@ -41,9 +41,11 @@ hand it back before `LandClassROC.DestroyQuad`. First measure where the physics 
   the holders is in [What has been read](should-you-install-it.md#what-has-been-read). *Solution:* measure it with Rock Precision
   Fix Diag (see [TODO.md](../TODO.md)).
 - **Parallax.** See [What has been read](should-you-install-it.md#what-has-been-read). *Solution:* check it in game.
-- **Scene switches, the map view, time warp**, and the rocks through floating origin shifts. Measured:
-  loading a save, and a flight low over the Mun down to the crash, where every holder went back to its
-  pool and none was lost (see [the holder pools, over a flight](../diag/README.md#the-holder-pools-over-a-flight)).
+- **The map view, time warp**, and the rocks through floating origin shifts. Measured: loading a save; a
+  flight low over the Mun down to the crash, where every holder went back to its pool and none was lost
+  (see [the holder pools, over a flight](../diag/README.md#the-holder-pools-over-a-flight)); and scene
+  switches from the Mun to Kerbin through the Space Center, where no holder of the Mun was left behind
+  (see [the holder pools, across scene switches](../diag/README.md#the-holder-pools-across-scene-switches)).
   *Solution:* a holder record before and after each step with Rock Precision Fix Diag, and rock records
   during the flight (see [TODO.md](../TODO.md)).
 

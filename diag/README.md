@@ -2,15 +2,15 @@
 
 Readings of [Rock Precision Fix Diag](https://github.com/lhervier/KSP-RockPrecisionFixDiag) with this
 mod installed, kept as they were logged, copied out of `KSP.log`: for the rocks, one file per load, each
-holding the last record taken after that load; for the holder pools, one file per flight, holding every
-record taken during it.
+holding the last record taken after that load; for the holder pools, one file per flight or session,
+holding every record taken during it.
 
 The procedure, the saves and the format of a record belong to that mod:
 [its protocol](https://github.com/lhervier/KSP-RockPrecisionFixDiag/blob/main/docs/measuring-the-rocks.md#the-protocol),
 [the saves](https://github.com/lhervier/KSP-RockPrecisionFixDiag/blob/main/diag/README.md#the-saves) and
 [the log](https://github.com/lhervier/KSP-RockPrecisionFixDiag/blob/main/docs/measuring-the-rocks.md#the-log).
 
-## With Terrain Precision Fix
+## The rocks, over twelve loads
 
 KSP 1.12.5 on Windows. `GameData` holding Harmony, ModuleManager, KSP Community Fixes 1.41.1,
 [Terrain Precision Fix](https://github.com/lhervier/KSP-TerrainPrecisionFix) 0.1.0, Rock Precision Fix
@@ -59,7 +59,7 @@ the way.
 The same install as above, with a later build of Rock Precision Fix Diag: the first one
 with the holder record. `ref-mune-5km.sfs` loaded once, then `Alt+Shift+F6` pressed 30 s into the flight,
 again about every two minutes, and once more after the pod crashed, following
-[its protocol](https://github.com/lhervier/KSP-RockPrecisionFixDiag/blob/main/docs/checking-the-holder-pools.md#the-protocol).
+[its protocol](https://github.com/lhervier/KSP-RockPrecisionFixDiag/blob/main/docs/checking-the-holder-pools.md#over-a-flight).
 
 Both fixes wrote to `KSP.log` that they had acted on the Mun before the first record:
 
@@ -86,6 +86,42 @@ sixth. Every record ends on `0 broken rules`:
 
 Those counts are, record for record, those of the flight with Terrain Precision Fix alone: the flight
 takes as many holders out of the pool, at the same moments, with this mod as without it.
+
+## The holder pools, across scene switches
+
+This mod hangs a holder from its quad, and the quads of the most detailed level are shared by every body.
+Leaving a body switches its terrain off: this series checks that its holders go back to their pools
+before stock destroys them, and that none travels on a quad to the next body.
+
+The same install and build as the flight above. One session, following
+[its protocol](https://github.com/lhervier/KSP-RockPrecisionFixDiag/blob/main/docs/checking-the-holder-pools.md#across-scene-switches):
+`reference-mune.sfs` loaded from the Space Center, back to the Space Center, then `reference-kerbin.sfs`,
+with `Alt+Shift+F6` pressed in each of the three scenes.
+
+Both fixes wrote to `KSP.log` that they had acted on each body before its first record:
+
+```
+[TerrainPrecisionFix] Kerbin: terrain placed in double precision (first quad corrected by 16.50 mm)
+[RockPrecisionFix] Kerbin: scatter drawn from its terrain quads (first holder was -27.51 mm off)
+[TerrainPrecisionFix] Mun: terrain placed in double precision (first quad corrected by 1.68 mm)
+[RockPrecisionFix] Mun: scatter drawn from its terrain quads (first holder was -0.40 mm off)
+```
+
+| session | records |
+|---|---|
+| with both fixes | [`scenes-both-holders.log`](runs/scenes-both-holders.log) |
+
+The file holds the three records, the line of `KSP.log` marking the arrival in each scene, and those of
+both fixes. Every record ends on `0 in no pool` and `0 broken rules`:
+
+| record | scene | pools | holders in use | free |
+|---|---|---|---|---|
+| 1 | the Mun | the Mun's `Rock00` | 128 | 32 |
+| 2 | the Space Center | Kerbin's `Tree00`, `Grass00`, `boulder`, `Pine00`, `cactus` | 4 | 316 |
+| 3 | Kerbin | the same five | 118 | 202 |
+
+Those are, pool for pool, the counts of the same session with Terrain Precision Fix alone. The Mun's pool
+is gone from the second record on, and no holder of the Mun turned up under a quad of Kerbin.
 
 ## The other configurations
 
