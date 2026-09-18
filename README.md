@@ -87,9 +87,8 @@ no cost shows. The difference is smaller than between two runs of the same confi
 
 ## Limits and solutions
 
-Not measured without Terrain Precision Fix; mods that look for the holders; Breaking Ground's surface
-features, placed the same way, not handled yet; and the map view and time warp, not checked yet (loading
-a save, a whole flight and scene switches are).
+Not measured without Terrain Precision Fix; mods that look for the holders. What is still to check
+(time warp, Kopernicus, Parallax) is in [TODO.md](TODO.md).
 
 **→ Full chapter: [Limits and solutions](docs/limits-and-solutions.md)**
 

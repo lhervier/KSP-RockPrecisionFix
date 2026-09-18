@@ -2,8 +2,7 @@
 
 Part of [Rock Precision Fix](../README.md).
 
-What this fix can leave out, and what it has not been checked against yet — each with its solution, or
-with what is still missing for one.
+What this fix can leave out — each with its solution, or with what is still missing for one.
 
 ## Without Terrain Precision Fix
 
@@ -24,28 +23,5 @@ and TUFX have been read (see [Should you install it?](should-you-install-it.md))
 Community Fixes, it would be for the mods concerned to adapt (see
 [If it went into KSP Community Fixes](should-you-install-it.md#if-it-went-into-ksp-community-fixes)).
 
-## Surface features with colliders
-
-**Limit.** Breaking Ground's surface features are placed the same way (`PQSMod_ROCScatterQuad.Setup`
-does the same `localPosition = quad.positionPlanet`), and they have colliders, so their offset may be
-physical, not only visual. This mod does not handle them.
-
-**Solution.** Not there yet. The same patch should apply: hang the holder from its quad after `Setup`,
-hand it back before `LandClassROC.DestroyQuad`. First measure where the physics puts those colliders
-(see [TODO.md](../TODO.md)).
-
-## Not checked yet
-
-- **Kopernicus.** It replaces the stock holder with a subclass that inherits `Setup` without redeclaring
-  it, and releases it through the same `DestroyQuad`, so it should be covered. What its code does with
-  the holders is in [What has been read](should-you-install-it.md#what-has-been-read). *Solution:* measure it with Rock Precision
-  Fix Diag (see [TODO.md](../TODO.md)).
-- **Parallax.** See [What has been read](should-you-install-it.md#what-has-been-read). *Solution:* check it in game.
-- **The map view, time warp**, and the rocks through floating origin shifts. Measured: loading a save; a
-  flight low over the Mun down to the crash, where every holder went back to its pool and none was lost
-  (see [the holder pools, over a flight](../diag/README.md#the-holder-pools-over-a-flight)); and scene
-  switches from the Mun to Kerbin through the Space Center, where no holder of the Mun was left behind
-  (see [the holder pools, across scene switches](../diag/README.md#the-holder-pools-across-scene-switches)).
-  *Solution:* a holder record before and after each step with Rock Precision Fix Diag, and rock records
-  during the flight (see [TODO.md](../TODO.md)).
+What is still to check (time warp, Kopernicus, Parallax) is listed in [TODO.md](../TODO.md).
 
