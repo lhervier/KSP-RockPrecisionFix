@@ -59,7 +59,7 @@ higher or lower against the ground each time.
 times on Kerbin and on the Mun. With Terrain Precision Fix alone, the ground stops moving but the scatter
 does not: half of the measured vertices come back 130 mm apart on Kerbin. With both fixes, every holder is
 drawn exactly on its quad, and no vertex moves by more than 0.125 mm. Over a whole flight low over the Mun,
-every holder goes back to its pool.
+every holder stays drawn on its quad, and every holder goes back to its pool.
 
 **→ Full chapter: [Checking the culprit](docs/checking-the-culprit.md)**
 

@@ -11,7 +11,8 @@ vector any more.
 - **After `PQSMod_LandClassScatterQuad.Setup`**, which gives a holder its quad: the holder is re-parented
   under the quad, with zero position, identity rotation and unit scale. From then on it follows the quad
   through everything stock does to it, floating origin shifts (`PQ.FastUpdateSubQuadsPosition`) and
-  re-placements (`PQ.PreciseUpdateSubQuadsPosition`) included, with nothing more to do.
+  re-placements (`PQ.PreciseUpdateSubQuadsPosition`) included, with nothing more to do
+  ([measured along a flight](checking-the-culprit.md#rock-precision-fix-diag-the-rocks-over-a-flight)).
 - **Before `PQSLandControl.LandClassScatter.DestroyQuad`**, which returns a holder to its pool when its
   quad is destroyed: the holder goes back under the pool's container, where stock keeps its free holders, before the
   quad itself goes back to the PQS cache to be reused elsewhere. A prefix, because the stock method

@@ -1,9 +1,9 @@
 # Measurement runs
 
 Readings of [Rock Precision Fix Diag](https://github.com/lhervier/KSP-RockPrecisionFixDiag) with this
-mod installed, kept as they were logged, copied out of `KSP.log`: for the rocks, one file per load, each
-holding the last record taken after that load; for the holder pools, one file per flight or session,
-holding every record taken during it.
+mod installed, kept as they were logged, copied out of `KSP.log`: for the rocks after a load, one file per
+load, each holding the last record taken after that load; for the rocks over a flight and for the holder
+pools, one file per flight or session, holding every record taken during it.
 
 The procedure, the saves and the format of a record belong to that mod:
 [its protocol](https://github.com/lhervier/KSP-RockPrecisionFixDiag/blob/main/docs/measuring-the-rocks.md#the-protocol),
@@ -49,6 +49,43 @@ End of record 13: 128 quads with rocks, 128 holders (0 not built yet); nearest q
 
 So every record was taken once all the holders were built, and all the records of a body name the same
 nearest quad: its objects and their measured vertices compare one by one from one load to the next.
+
+## The rocks, over a flight
+
+Where the rocks are drawn once the terrain has kept building and destroying quads under a moving craft,
+with the world origin following it.
+
+The same install as above, with the build of Rock Precision Fix Diag of
+[the holder pools](#the-holder-pools-over-a-flight) below. `ref-mune-5km.sfs` loaded once, then `Alt+F6`
+pressed 30 s into the flight, again every two minutes, and once more after the pod crashed, following
+[its protocol](https://github.com/lhervier/KSP-RockPrecisionFixDiag/blob/main/docs/measuring-the-rocks.md#over-a-flight).
+
+Both fixes wrote to `KSP.log` that they had acted on the Mun before the first record:
+
+```
+[TerrainPrecisionFix] Mun: terrain placed in double precision (first quad corrected by 17.46 mm)
+[RockPrecisionFix] Mun: scatter drawn from its terrain quads (first holder was -15.15 mm off)
+```
+
+| flight | records |
+|---|---|
+| with both fixes | [`mun-5km-both-rocks.log`](runs/mun-5km-both-rocks.log) |
+
+The file holds the six records and the line of `KSP.log` reporting the crash, between the fifth and the
+sixth. Every record has all its holders built, and 200 vertices measured on its nearest quad, all of them
+with ground under them:
+
+| record | quads with rocks | holders | nearest quad |
+|---|---|---|---|
+| 1 | 344 | 344 | `Mun Zp200000011` |
+| 2 | 168 | 168 | `Mun Xn231111111` |
+| 3 | 144 | 144 | `Mun Xn211311311` |
+| 4 | 224 | 224 | `Mun Xn122020000` |
+| 5 | 152 | 152 | `Mun Xn013331113` |
+| 6, after the crash | 568 | 568 | `Mun Zn200000011` |
+
+Those are, record for record, the quads of the same flight with Terrain Precision Fix alone, and the same
+nearest quads: their vertices compare one by one from one flight to the other.
 
 ## The holder pools, over a flight
 
