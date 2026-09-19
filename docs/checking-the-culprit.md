@@ -4,7 +4,7 @@ Part of [Rock Precision Fix](../README.md): the measurements that check [the cul
 
 Before anything is changed, [Rock Precision Fix Diag](https://github.com/lhervier/KSP-RockPrecisionFixDiag)
 measures what stock does. Its page carries its method and
-[its protocol](https://github.com/lhervier/KSP-RockPrecisionFixDiag/blob/main/docs/measuring-the-rocks.md#the-protocol).
+[its protocol](https://github.com/lhervier/KSP-RockPrecisionFixDiag/blob/main/docs/measuring-the-rocks.md#load-after-load).
 For every quad carrying scatter around a landed craft, it reads the height of the quad, of each of its
 holders, and of the matrices they are drawn with; for every object of the quad nearest to the craft, the
 height above the ground right under them of up to 10 of its vertices, spread over the whole object.

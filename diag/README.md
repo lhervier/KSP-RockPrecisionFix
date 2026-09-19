@@ -6,7 +6,7 @@ load, each holding the last record taken after that load; for the rocks over a f
 pools, one file per flight or session, holding every record taken during it.
 
 The procedure, the saves and the format of a record belong to that mod:
-[its protocol](https://github.com/lhervier/KSP-RockPrecisionFixDiag/blob/main/docs/measuring-the-rocks.md#the-protocol),
+[its protocol](https://github.com/lhervier/KSP-RockPrecisionFixDiag/blob/main/docs/measuring-the-rocks.md#load-after-load),
 [the saves](https://github.com/lhervier/KSP-RockPrecisionFixDiag/blob/main/diag/README.md#the-saves) and
 [the log](https://github.com/lhervier/KSP-RockPrecisionFixDiag/blob/main/docs/measuring-the-rocks.md#the-log).
 
