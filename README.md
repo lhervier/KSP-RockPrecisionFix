@@ -1,5 +1,7 @@
 # Rock Precision Fix
 
+**⚠️ Work in progress.** This is an active investigation, not a finished mod. The figures, the code and the conclusions on this page can still change, and several questions are still open.
+
 A fix for stock KSP 1.12, written to go with
 [Terrain Precision Fix](https://github.com/lhervier/KSP-TerrainPrecisionFix) and, like it, kept as
 small as possible: two Harmony patches, in one source file. Here is what they fix, for the terrain
