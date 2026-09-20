@@ -24,6 +24,10 @@ installed.
 
 ## What has been read
 
+Only one thing decides whether a piece of code sees the move: whether it goes looking for the holders.
+
+### What uses them
+
 - **Stock** relies on neither. The pool is kept in the lists above, not in the hierarchy. A holder is shown
   and hidden with `obj.SetActive`, a quad with `meshRenderer.enabled`, so the holder does not inherit
   anything from the quad's object. When a collision or a raycast hits the ground, stock asks the object hit
@@ -33,9 +37,22 @@ installed.
   (`scatterParent`, which this mod reads at every call, and the pool), and reaches the objects of a holder
   through the holder's own children, which follow it. Its lethal and heat emitting scatter computes world
   positions from the holder's matrix and positions in the quad's frame, which this fix makes exact. Its
-  optional scatter colliders end up below the quad; stock's `GetComponent<PQ>()` still finds no quad on
-  them, but that is not measured.
-- **Parallax** has its own scatter system, keyed by quad, and does not touch the stock holders.
+  optional scatter colliders end up below the quad, and they are the ones measured in
+  [Rock Precision Fix Diag, the colliders](checking-the-culprit.md#rock-precision-fix-diag-the-colliders):
+  the fix brings each of them onto the object it belongs to. Stock's `GetComponent<PQ>()` still finds no
+  quad on them, which is what the instrument relies on to tell the ground from a rock when it casts a ray
+  at them.
+
+### What never touches them
+
+Read in their source, not measured: none of the three names a stock holder anywhere.
+
+- **Parallax** has its own scatter system and never names the stock holders. Its objects are drawn
+  from the quad's own matrix (`quad.meshRenderer.localToWorldMatrix`), and the colliders it can give
+  them hang from the quad and are placed in the quad's frame, so what it draws and what a craft hits
+  share the ground's frame: neither the defect on this page nor this fix reaches them. It also leaves
+  the stock `LandControl` in place on every body but Eeloo, so the stock scatter, its holders and this
+  fix are what they are without it.
 - **KSP Community Fixes** does not touch the scatter; `OptimizedModuleRaycasts` asks the object hit whether
   it is a quad, as stock does.
 - **TUFX** (1.1.1) works on the camera's image, not on the scene: it has no Harmony patch and never looks
@@ -77,7 +94,9 @@ of a fix that moves stock objects, and a reader who sees a way through should sa
 What is left is to take the holder out of the sphere, as this mod does, or to stop drawing the scatter from
 the holder's transform altogether and draw it from somewhere else, which changes far more than where an
 object hangs. Of the two, hanging the holder from its quad is the smaller change: the quad is the one object
-stock already keeps in step, for nothing, with the ground the scatter is built from.
+stock already keeps in step, for nothing, with the ground the scatter is built from. Parallax reaches the same
+conclusion for its own scatter: the colliders it creates hang from the quad they belong to, in
+the quad's frame, so that the object a craft hits is the object the quad draws.
 
 ## The balance
 

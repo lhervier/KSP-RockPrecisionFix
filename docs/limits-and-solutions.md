@@ -24,5 +24,3 @@ and TUFX have been read (see [Should you install it?](should-you-install-it.md))
 Community Fixes, it would be for the mods concerned to adapt (see
 [If it went into KSP Community Fixes](should-you-install-it.md#if-it-went-into-ksp-community-fixes)).
 
-What is still to check (Parallax) is listed in [TODO.md](../TODO.md).
-

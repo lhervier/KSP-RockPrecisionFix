@@ -100,8 +100,7 @@ no cost shows. The difference is smaller than between two runs of the same confi
 
 ## Limits and solutions
 
-Not measured without Terrain Precision Fix; mods that look for the holders. What is still to check
-(Parallax) is in [TODO.md](TODO.md).
+Not measured without Terrain Precision Fix; mods that look for the holders.
 
 **→ Full chapter: [Limits and solutions](docs/limits-and-solutions.md)**
 
