@@ -59,7 +59,7 @@ much above or below the ground.
 A rounding depends on the frame the vector is converted into: the world matrix of the terrain sphere,
 whose rotation and translation change from one load to the next. It is the same frame, and the same
 reason, as for the ground itself, set out on Terrain Precision Fix's page under
-[Why it is different at every load](https://github.com/lhervier/KSP-TerrainPrecisionFix#why-it-is-different-at-every-load).
+[Why it is different at every load](https://github.com/lhervier/KSP-TerrainPrecisionFix/blob/master/docs/the-culprit.md#why-it-is-different-at-every-load).
 As there, it is a hypothesis read from the stock code, and the fix does not need it to hold: it removes
 the long vector the rounding is drawn from.
 
