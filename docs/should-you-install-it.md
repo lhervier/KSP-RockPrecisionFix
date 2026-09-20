@@ -2,9 +2,10 @@
 
 Part of [Rock Precision Fix](../README.md). The short answer is on the main page, under [Should you install it?](../README.md#should-you-install-it); here is the whole case.
 
-Not as a mod of its own. The [measurements](checking-the-culprit.md) show that the fix does what it says. Its main drawback is
-not in what they measure: it moves stock objects, the scatter holders, away from where stock puts them,
-and other mods may look for them there.
+Not on a stock install, where nothing it fixes is ever seen; with a mod that gives the scatter colliders,
+it is yours to weigh. The [measurements](checking-the-culprit.md) show that the fix does what it says. Its
+main drawback is not in what they measure: it moves stock objects, the scatter holders, away from where
+stock puts them, and other mods may look for them there.
 
 ## What the fix changes for other mods
 
@@ -80,18 +81,31 @@ stock already keeps in step, for nothing, with the ground the scatter is built f
 
 ## The balance
 
-On one side, a defect nobody sees: stock scatter has no collider, and is sunk into the ground on purpose
-(see [Why the moving scatter matters](../README.md#why-the-moving-scatter-matters)). On the other, a change to where
-stock objects hang, which any mod installed along with it may rely on. Its cost weighs on neither side:
-none shows in the measurement (see [Performance](performance.md)).
+On one side, on a stock install, a defect nobody sees: stock scatter has no collider, and is sunk into the
+ground on purpose (see [Why the moving scatter matters](../README.md#why-the-moving-scatter-matters)). On
+the other, a change to where stock objects hang, which any mod installed along with it may rely on. Its
+cost weighs on neither side: none shows in the measurement (see [Performance](performance.md)).
+
+What tips the first side is another mod. Give the scatter colliders — the
+[Stock Scatter Collider Enabler Patch](https://github.com/Poodmund/Stock-Scatter-Collider-Enabler-Patch)
+does, on top of Kopernicus, and it is on CKAN — and the defect stops being invisible: the rock a craft
+hits stands up to 104 mm from the rock its pilot sees, and a kerbal left on a boulder sinks into it at one
+load and stands clear of it at the next. Only this fix closes that gap; Terrain Precision Fix halves it
+(see [Rock Precision Fix Diag, the colliders](checking-the-culprit.md#rock-precision-fix-diag-the-colliders)).
+So the answer below is not the same for everyone: it holds for a stock install, and a player whose mods
+give the scatter colliders is weighing something else.
 
 And it is not a change that can be traded away: nothing above leaves a fix that keeps the holders where
 stock puts them.
 
-As a mod of its own, that is not worth it. Nobody installing it would know that the holders moved, and a
-mod tripping over it would fail with nothing to point at this one. So this mod stays what it is: the
-measured answer to what Terrain Precision Fix leaves behind, and the proof that the culprit is the right
-one.
+So, should you install it? On a stock install, no. Nobody installing it there would know that the holders
+moved, and a mod tripping over it would fail with nothing to point at this one — a bad trade against a
+defect that changes nothing in play. With a mod that gives the scatter colliders, the trade is yours to
+make: the gap it closes is then a real one, between the rock your craft hits and the rock you see, and no
+other fix closes it.
+
+Either way, this mod stays what it is: the measured answer to what Terrain Precision Fix leaves behind,
+and the proof that the culprit is the right one.
 
 ## If it went into KSP Community Fixes
 
@@ -102,5 +116,7 @@ would be known, and a player hit by it could undo it without removing anything e
 But it would still be a change that other mods have to follow. A mod that finds holders through the
 hierarchy would have to change its code: search under the terrain quads as well, as Rock Precision Fix
 Diag does, or read the holders from their scatter's pool (`LandClassScatter.cacheAssigned`, a private
-list), which does not depend on where they hang. Whether an invisible defect is worth asking that of other
-modders is not a technical question, and this page does not answer it.
+list), which does not depend on where they hang. Whether that is worth asking of other modders is not a
+technical question, and this page does not answer it. What can be said is what is being asked for: not
+only a defect nobody sees, but also the one players already meet when their mods give the scatter
+colliders, where the rock hit is not the rock seen.

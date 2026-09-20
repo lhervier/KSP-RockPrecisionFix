@@ -118,6 +118,48 @@ hangs from, and nothing about the objects in it; were the cause elsewhere, the o
 In other words: reload the same save as many times as you like, and the scatter comes back at the same
 place, on ground that is in the same place.
 
+## Rock Precision Fix Diag, the colliders
+
+Everything above is about where the scatter is **drawn**, because stock scatter has no collider. Give it
+one, and the defect becomes physical: what a craft hits is placed by the physics engine, which is handed
+the holder's position, while what the pilot sees is drawn from the holder's matrix — the two numbers whose
+rounding this whole page is about.
+
+A mod does give it one:
+[Kopernicus](https://github.com/Kopernicus/Kopernicus) with the
+[Stock Scatter Collider Enabler Patch](https://github.com/Poodmund/Stock-Scatter-Collider-Enabler-Patch),
+a config file on CKAN that asks for a collision mesh on every stock object of scatter. The instrument then
+measures, object by object, where the physics engine holds that collider against where the object is
+drawn, following
+[its protocol](https://github.com/lhervier/KSP-RockPrecisionFixDiag/blob/main/docs/measuring-the-rocks.md#with-colliders-on-the-scatter):
+one save, a kerbal standing on a boulder in a desert of Kerbin, loaded six times per configuration, one
+record and one picture of the kerbal's feet per load. Six objects carry a collider on the quad read: one
+`boulder` and five `cactus`. The records taken with both fixes are under
+[diag](../diag/README.md#the-colliders); those taken without this mod belong to
+[the instrument](https://github.com/lhervier/KSP-RockPrecisionFixDiag/blob/main/docs/what-the-readings-show.md#the-colliders),
+which this table quotes.
+
+| the collider against the object drawn, over 36 readings | on stock | with Terrain Precision Fix alone | with both fixes |
+|---|---|---|---|
+| *up* | −68.7 to +104.2 mm | −70.2 to +70.3 mm | −0.026 to +0.022 mm |
+| *up*, root mean square | 48.1 mm | 31.6 mm | 0.010 mm |
+| *across*, at most | 83.3 mm | 44.5 mm | 0.058 mm |
+
+**With both fixes, the collider and the object are the same object again**, to a hundredth of a
+millimetre, at every load. Without this mod they are centimetres apart, drawn afresh at every load:
+Terrain Precision Fix halves the gap without closing it, since it leaves the holder hanging from the
+sphere, over the 600 km vector this page is about.
+
+**The gap does not follow the holder.** In one of the stock loads, the holder of those six objects sits
+exactly on its quad, *up* and *across* 0.000 mm, and its colliders still stand up to 73 mm from the
+objects they belong to. Whatever separates them happens below the holder, where each object carries its
+own position under it — which is why hanging the holder from its quad settles it for the objects as well.
+
+**And it is visible.** On the boulder the kerbal stands on, the gap reads −4.3, −48.1, +48.2, +10.2, −9.1
+and +53.7 mm over the stock loads: its boots sink to the ankles at one load and stand clear of the rock at
+the next. With both fixes, the six pictures are interchangeable. They are illustrations, not measurements:
+the viewpoint is not exactly the same twice, and a kerbal sinks a little into whatever it stands on.
+
 ## Rock Precision Fix Diag, the rocks over a flight
 
 The loads above read the scatter right after it is built, around a craft that does not move. In flight,

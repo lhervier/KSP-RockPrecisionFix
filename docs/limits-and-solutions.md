@@ -19,9 +19,10 @@ same save.
 hierarchy sees them elsewhere than stock puts them. Only stock, Kopernicus, Parallax, KSP Community Fixes
 and TUFX have been read (see [Should you install it?](should-you-install-it.md)).
 
-**Solution.** None in this mod: moving the holder is the fix. Do not install it on its own. In KSP
+**Solution.** None in this mod: moving the holder is the fix. Weigh it before installing it, which
+[Should you install it?](should-you-install-it.md) is about. In KSP
 Community Fixes, it would be for the mods concerned to adapt (see
 [If it went into KSP Community Fixes](should-you-install-it.md#if-it-went-into-ksp-community-fixes)).
 
-What is still to check (time warp, Kopernicus, Parallax) is listed in [TODO.md](../TODO.md).
+What is still to check (Parallax) is listed in [TODO.md](../TODO.md).
 

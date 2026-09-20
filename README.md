@@ -9,11 +9,13 @@ scatter drawn around your craft — the rocks, and around the KSC the grass and 
 > several times, and every rock, tuft of grass or tree comes back drawn a little higher or a little
 > lower against the ground each time — several centimetres apart on Kerbin.
 
-The fix works, and this page measures it. It is still **not worth installing as a mod of its own**: to
-correct a defect nobody sees, it moves stock objects to another place in the scene, where other mods may
-expect to find them. That move is its main drawback. Were the fix part of KSP Community Fixes, it would
-no longer be a technical risk but a question for modders to settle: whether mods that look for those
-objects should change their code. See [Should you install it?](#should-you-install-it)
+The fix works, and this page measures it. On a stock install it is still **not worth installing on its
+own**: to correct a defect nobody sees there, it moves stock objects to another place in the scene, where
+other mods may expect to find them. That move is its main drawback. It is another matter with a mod that
+gives the scatter colliders, where the defect is one you meet: the rock your craft hits is not the rock
+you see. Were the fix part of KSP Community Fixes, the move would no longer be a technical risk but a
+question for modders to settle: whether mods that look for those objects should change their code. See
+[Should you install it?](#should-you-install-it)
 
 **How this was made.** Written with Claude, Anthropic's AI assistant, and reviewed line by line by a
 human — me. I am saying so up front, because contributions made with an AI deserve a closer look than
@@ -24,18 +26,26 @@ lines anyone can check, and the fix fits in one file you can read in a few minut
 
 ## Why the moving scatter matters
 
-It barely does. Stock scatter has no collider: no craft rests on it and nothing hits it, so a rock drawn a
-few centimetres higher or lower than at the last load changes nothing for the game. Scatter is also sunk
-into the ground on purpose, so a shift of a few centimetres mostly moves it within the ground, where
-nobody sees it.
+On a stock install, it barely does. Stock scatter has no collider: no craft rests on it and nothing hits
+it, so a rock drawn a few centimetres higher or lower than at the last load changes nothing for the game.
+Scatter is also sunk into the ground on purpose, so a shift of a few centimetres mostly moves it within the
+ground, where nobody sees it.
 
-This fix exists for another reason. [Terrain Precision Fix](https://github.com/lhervier/KSP-TerrainPrecisionFix)
-changes where KSP builds the ground: it moves the terrain quads, not the scatter drawn on them, and the
-scatter no longer follows the ground it is drawn on: in stock it sometimes comes back exactly on its quad,
-with Terrain Precision Fix never. Nobody sees that either. But a fix that leaves something behind, even
-something invisible, has to answer for it, and this mod is that answer: with both installed, the ground and
-the scatter on it come back at the same place at every load. Whether that answer is worth installing is
-another question, answered in [Should you install it?](#should-you-install-it)
+Install a mod that gives the scatter colliders, and it does matter. The physics engine is handed the
+holder's position, the pilot sees what is drawn from its matrix, and those are the two numbers that round
+differently: the rock a craft hits is then up to 104 mm from the rock it can see, drawn afresh at every
+load. Terrain Precision Fix alone does not settle that; with this mod as well, the two agree to a
+hundredth of a millimetre. See
+[Rock Precision Fix Diag, the colliders](docs/checking-the-culprit.md#rock-precision-fix-diag-the-colliders).
+
+It was written for a third reason, before any of that was measured.
+[Terrain Precision Fix](https://github.com/lhervier/KSP-TerrainPrecisionFix) changes where KSP builds the
+ground: it moves the terrain quads, not the scatter drawn on them, and the scatter no longer follows the
+ground it is drawn on — in stock it sometimes comes back exactly on its quad, with Terrain Precision Fix
+never. On a stock install, that is as invisible as the rest. But a fix that leaves something behind has to
+answer for it, and this mod is that answer: with both installed, the ground and the scatter on it come back
+at the same place at every load. Whether that answer is worth installing is another question, answered in
+[Should you install it?](#should-you-install-it)
 
 ### Disclaimer: it is meant to go with Terrain Precision Fix
 
@@ -59,7 +69,9 @@ higher or lower against the ground each time.
 times on Kerbin and on the Mun. With Terrain Precision Fix alone, the ground stops moving but the scatter
 does not: half of the measured vertices come back 130 mm apart on Kerbin. With both fixes, every holder is
 drawn exactly on its quad, and no vertex moves by more than 0.125 mm. Over a whole flight low over the Mun,
-every holder stays drawn on its quad, and every holder goes back to its pool.
+every holder stays drawn on its quad, and every holder goes back to its pool. With a mod that gives the
+scatter colliders, the collider of an object stands up to 104 mm from the object drawn on stock and 70 mm
+with Terrain Precision Fix alone, and 0.026 mm with both fixes.
 
 **→ Full chapter: [Checking the culprit](docs/checking-the-culprit.md)**
 
@@ -72,9 +84,10 @@ the quad goes. The stock scatter is then drawn with the very matrix of the groun
 
 ## Should you install it?
 
-Not as a mod of its own. The fix moves stock objects, the scatter holders, and a mod that looks for them
-where stock puts them would miss them, against a defect nobody sees. Inside KSP Community Fixes, it would
-become a question for modders: whether such mods should adapt.
+Not on a stock install: the fix moves stock objects, the scatter holders, and a mod that looks for them
+where stock puts them would miss them, against a defect nobody sees there. With a mod that gives the
+scatter colliders, the gap it closes is a real one and the trade is yours to weigh. Inside KSP Community
+Fixes, it would become a question for modders: whether such mods should adapt.
 
 **→ Full chapter: [Should you install it?](docs/should-you-install-it.md)**
 
@@ -88,7 +101,7 @@ no cost shows. The difference is smaller than between two runs of the same confi
 ## Limits and solutions
 
 Not measured without Terrain Precision Fix; mods that look for the holders. What is still to check
-(time warp, Kopernicus, Parallax) is in [TODO.md](TODO.md).
+(Parallax) is in [TODO.md](TODO.md).
 
 **→ Full chapter: [Limits and solutions](docs/limits-and-solutions.md)**
 
